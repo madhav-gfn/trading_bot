@@ -1,0 +1,410 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 3 0 R >>
+endobj
+2 0 obj
+<< /Title (Vahan Lead-Source Cohort Performance) /Author (Vahan lead funnel analysis) >>
+endobj
+3 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R] /Count 4 >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 3831 >>
+stream
+BT /F2 22.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 784.0 Tm (Lead-source cohort performance) Tj ET
+BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 765.0 Tm (Vahan sourcing and telecalling funnel | First Trip conversion analysis) Tj ET
+0.210 0.420 0.600 RG 1.5 w 54.0 746.0 m 541.0 746.0 l S
+BT /F2 14.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 714.0 Tm (Executive summary) Tj ET
+BT /F1 10.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 692.0 Tm (This report compares lead sources by the share of uploaded leads that reached First Trip \(FT\).) Tj ET
+BT /F1 10.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 677.0 Tm (Warm and cold sources are ranked separately because they enter the funnel at different stages.) Tj ET
+BT /F1 10.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 662.0 Tm (Wilson confidence intervals and Fisher exact tests keep the small event counts in view.) Tj ET
+0.950 0.960 0.970 rg 54.0 586.0 487.0 61.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 586.0 487.0 61.0 re S
+0.210 0.420 0.600 rg 54.0 586.0 4.0 61.0 re f
+BT /F2 10.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 68.0 624.5 Tm (The two leading cold cohorts are statistically tied in this sample. Treat Single) Tj ET
+BT /F2 10.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 68.0 609.5 Tm (Referral > 7 days and Khanna - 2W 26th Jul as co-leaders, not a firm first and) Tj ET
+BT /F2 10.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 68.0 594.5 Tm (second.) Tj ET
+BT /F2 13.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 556.0 Tm (Data integrity) Tj ET
+0.090 0.130 0.170 rg 54.0 517.0 487.0 29.0 re f
+BT /F2 8.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 60.0 530.5 Tm (Check) Tj ET
+BT /F2 8.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 235.0 530.5 Tm (Result) Tj ET
+1.000 1.000 1.000 rg 54.0 488.0 487.0 29.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 488.0 m 541.0 488.0 l S
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 502.5 Tm (Source rows) Tj ET
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 502.5 Tm (18,198) Tj ET
+0.950 0.960 0.970 rg 54.0 459.0 487.0 29.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 459.0 m 541.0 459.0 l S
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 473.5 Tm (Rows after lead-level deduplication) Tj ET
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 473.5 Tm (17,098) Tj ET
+1.000 1.000 1.000 rg 54.0 430.0 487.0 29.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 430.0 m 541.0 430.0 l S
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 444.5 Tm (Repeated phone hashes) Tj ET
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 444.5 Tm (1,077 hashes across 2,177 rows) Tj ET
+0.950 0.960 0.970 rg 54.0 401.0 487.0 29.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 401.0 m 541.0 401.0 l S
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 415.5 Tm (Missing phone hashes) Tj ET
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 415.5 Tm (1; kept separately) Tj ET
+1.000 1.000 1.000 rg 54.0 372.0 487.0 29.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 372.0 m 541.0 372.0 l S
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 386.5 Tm (FT events) Tj ET
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 386.5 Tm (54 raw; 53 after deduplication) Tj ET
+0.950 0.960 0.970 rg 54.0 343.0 487.0 29.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 343.0 m 541.0 343.0 l S
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 357.5 Tm (FT with no logged connection) Tj ET
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 357.5 Tm (22 raw records flagged) Tj ET
+BT /F1 8.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 324.5 Tm (Known phone hashes keep their most advanced recorded funnel state. Missing hashes cannot identify a person, so) Tj ET
+BT /F1 8.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 312.5 Tm (each row is retained. Inconsistent FT rows remain in cohort rates and are flagged.) Tj ET
+0.840 0.870 0.890 RG 0.7 w 54.0 36.0 m 541.0 36.0 l S
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 19.0 Tm (Vahan lead funnel analysis) Tj ET
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 523.0 19.0 Tm (1) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 8648 >>
+stream
+BT /F2 22.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 784.0 Tm (Cohort performance) Tj ET
+BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 765.0 Tm (FT rate = FT events / uploaded leads after deduplication | Cohorts below 100 leads omitted) Tj ET
+0.210 0.420 0.600 RG 1.5 w 54.0 746.0 m 541.0 746.0 l S
+BT /F2 13.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 715.0 Tm (Top cold cohorts) Tj ET
+0.090 0.130 0.170 rg 54.0 664.0 487.0 42.0 re f
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 60.0 691.3 Tm (#) Tj ET
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 82.0 691.3 Tm (Cohort) Tj ET
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 287.0 691.3 Tm (Leads) Tj ET
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 335.0 691.3 Tm (FT) Tj ET
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 367.0 691.3 Tm (Rate) Tj ET
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 422.0 691.3 Tm (95% Wilson CI) Tj ET
+1.000 1.000 1.000 rg 54.0 622.0 487.0 42.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 622.0 m 541.0 622.0 l S
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 650.3 Tm (1) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 82.0 650.3 Tm (Single Referral > 7 days- 24th Jul) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 287.0 650.3 Tm (1,500) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 335.0 650.3 Tm (14) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 367.0 650.3 Tm (0.93%) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 422.0 650.3 Tm (0.56% - 1.56%) Tj ET
+0.950 0.960 0.970 rg 54.0 580.0 487.0 42.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 580.0 m 541.0 580.0 l S
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 608.3 Tm (2) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 82.0 608.3 Tm (Khanna- 2W 26th Jul) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 287.0 608.3 Tm (1,546) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 335.0 608.3 Tm (14) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 367.0 608.3 Tm (0.91%) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 422.0 608.3 Tm (0.54% - 1.51%) Tj ET
+1.000 1.000 1.000 rg 54.0 538.0 487.0 42.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 538.0 m 541.0 538.0 l S
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 566.3 Tm (3) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 82.0 566.3 Tm (OLX - Ashwin - 2W - 17 Jul) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 287.0 566.3 Tm (5,182) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 335.0 566.3 Tm (4) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 367.0 566.3 Tm (0.08%) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 422.0 566.3 Tm (0.03% - 0.20%) Tj ET
+BT /F2 13.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 506.0 Tm (Top warm cohorts) Tj ET
+0.090 0.130 0.170 rg 54.0 455.0 487.0 42.0 re f
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 60.0 482.3 Tm (#) Tj ET
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 82.0 482.3 Tm (Cohort) Tj ET
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 287.0 482.3 Tm (Leads) Tj ET
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 335.0 482.3 Tm (FT) Tj ET
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 367.0 482.3 Tm (Rate) Tj ET
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 422.0 482.3 Tm (95% Wilson CI) Tj ET
+1.000 1.000 1.000 rg 54.0 413.0 487.0 42.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 413.0 m 541.0 413.0 l S
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 441.3 Tm (1) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 82.0 441.3 Tm (PreOb-Ob Fees Paid 29th Jul \(set 1\)) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 287.0 441.3 Tm (1,479) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 335.0 441.3 Tm (7) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 367.0 441.3 Tm (0.47%) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 422.0 441.3 Tm (0.23% - 0.97%) Tj ET
+0.950 0.960 0.970 rg 54.0 371.0 487.0 42.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 371.0 m 541.0 371.0 l S
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 399.3 Tm (2) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 82.0 399.3 Tm (PreOb-Ob Fees Paid 29th Jul \(set 2\)) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 287.0 399.3 Tm (1,550) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 335.0 399.3 Tm (7) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 367.0 399.3 Tm (0.45%) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 422.0 399.3 Tm (0.22% - 0.93%) Tj ET
+1.000 1.000 1.000 rg 54.0 329.0 487.0 42.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 329.0 m 541.0 329.0 l S
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 357.3 Tm (3) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 82.0 357.3 Tm (AI Connected but not Connected by TC- Set 1) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 287.0 357.3 Tm (1,480) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 335.0 357.3 Tm (5) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 367.0 357.3 Tm (0.34%) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 422.0 357.3 Tm (0.14% - 0.79%) Tj ET
+BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 298.0 Tm (How to read this table) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 281.5 Tm (The first two cold cohorts have close observed rates and overlapping confidence intervals. The third) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 267.5 Tm (cold cohort has very few FT events, so a small change in the records could materially change its) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 253.5 Tm (rate. Warm cohorts are already pre-qualified and should not be ranked directly against cold) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 239.5 Tm (acquisition sources.) Tj ET
+BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 211.0 Tm (FT rate by cohort) Tj ET
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 198.0 Tm (Points show the observed rate; lines show the 95% Wilson interval.) Tj ET
+0.840 0.870 0.890 RG 0.5 w 265.0 191.0 m 265.0 94.0 l S
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 256.0 84.0 Tm (0.0%) Tj ET
+0.840 0.870 0.890 RG 0.5 w 323.8 191.0 m 323.8 94.0 l S
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 314.8 84.0 Tm (0.4%) Tj ET
+0.840 0.870 0.890 RG 0.5 w 382.5 191.0 m 382.5 94.0 l S
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 373.5 84.0 Tm (0.8%) Tj ET
+0.840 0.870 0.890 RG 0.5 w 441.2 191.0 m 441.2 94.0 l S
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 432.2 84.0 Tm (1.2%) Tj ET
+0.840 0.870 0.890 RG 0.5 w 500.0 191.0 m 500.0 94.0 l S
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 491.0 84.0 Tm (1.6%) Tj ET
+BT /F1 7.3 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 180.7 Tm (Single Referral > 7 days-...) Tj ET
+0.210 0.420 0.600 RG 1.8 w 346.8 183.0 m 494.2 183.0 l S
+0.210 0.420 0.600 RG 1.0 w 346.8 186.0 m 346.8 180.0 l S
+0.210 0.420 0.600 RG 1.0 w 494.2 186.0 m 494.2 180.0 l S
+0.210 0.420 0.600 rg 399.1 180.0 6.0 6.0 re f
+BT /F1 7.3 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 164.7 Tm (Khanna- 2W 26th Jul) Tj ET
+0.210 0.420 0.600 RG 1.8 w 344.3 167.0 m 487.4 167.0 l S
+0.210 0.420 0.600 RG 1.0 w 344.3 170.0 m 344.3 164.0 l S
+0.210 0.420 0.600 RG 1.0 w 487.4 170.0 m 487.4 164.0 l S
+0.210 0.420 0.600 rg 395.0 164.0 6.0 6.0 re f
+BT /F1 7.3 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 148.7 Tm (OLX - Ashwin - 2W - 17 Jul) Tj ET
+0.210 0.420 0.600 RG 1.8 w 269.4 151.0 m 294.1 151.0 l S
+0.210 0.420 0.600 RG 1.0 w 269.4 154.0 m 269.4 148.0 l S
+0.210 0.420 0.600 RG 1.0 w 294.1 154.0 m 294.1 148.0 l S
+0.210 0.420 0.600 rg 273.3 148.0 6.0 6.0 re f
+BT /F1 7.3 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 132.7 Tm (PreOb-Ob Fees Paid 29th J...) Tj ET
+0.760 0.400 0.120 RG 1.8 w 298.7 135.0 m 408.0 135.0 l S
+0.760 0.400 0.120 RG 1.0 w 298.7 138.0 m 298.7 132.0 l S
+0.760 0.400 0.120 RG 1.0 w 408.0 138.0 m 408.0 132.0 l S
+0.760 0.400 0.120 rg 331.5 132.0 6.0 6.0 re f
+BT /F1 7.3 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 116.7 Tm (PreOb-Ob Fees Paid 29th J...) Tj ET
+0.760 0.400 0.120 RG 1.8 w 297.2 119.0 m 401.5 119.0 l S
+0.760 0.400 0.120 RG 1.0 w 297.2 122.0 m 297.2 116.0 l S
+0.760 0.400 0.120 RG 1.0 w 401.5 122.0 m 401.5 116.0 l S
+0.760 0.400 0.120 rg 328.3 116.0 6.0 6.0 re f
+BT /F1 7.3 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 100.7 Tm (AI Connected but not Conn...) Tj ET
+0.760 0.400 0.120 RG 1.8 w 286.2 103.0 m 380.8 103.0 l S
+0.760 0.400 0.120 RG 1.0 w 286.2 106.0 m 286.2 100.0 l S
+0.760 0.400 0.120 RG 1.0 w 380.8 106.0 m 380.8 100.0 l S
+0.760 0.400 0.120 rg 311.6 100.0 6.0 6.0 re f
+0.090 0.130 0.170 RG 0.6 w 265.0 87.0 m 500.0 87.0 l S
+0.210 0.420 0.600 rg 54.0 73.0 7.0 7.0 re f
+BT /F1 7.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 66.0 74.5 Tm (Cold) Tj ET
+0.760 0.400 0.120 rg 112.0 73.0 7.0 7.0 re f
+BT /F1 7.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 124.0 74.5 Tm (Warm) Tj ET
+0.840 0.870 0.890 RG 0.7 w 54.0 36.0 m 541.0 36.0 l S
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 19.0 Tm (Vahan lead funnel analysis) Tj ET
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 523.0 19.0 Tm (2) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 9887 >>
+stream
+BT /F2 22.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 784.0 Tm (Pairwise comparisons) Tj ET
+BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 765.0 Tm (Two-sided Fisher exact tests on FT vs. non-FT among the displayed top three in each segment) Tj ET
+0.210 0.420 0.600 RG 1.5 w 54.0 746.0 m 541.0 746.0 l S
+BT /F2 13.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 715.0 Tm (Cold cohorts) Tj ET
+0.090 0.130 0.170 rg 54.0 665.0 487.0 41.0 re f
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 60.0 691.3 Tm (Comparison) Tj ET
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 370.0 691.3 Tm (p-value) Tj ET
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 440.0 691.3 Tm (Reading) Tj ET
+1.000 1.000 1.000 rg 54.0 624.0 487.0 41.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 624.0 m 541.0 624.0 l S
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 651.3 Tm (Single Referral > 7 days- 24th Jul / Khanna- 2W 26th Jul) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 370.0 651.3 Tm (1.000) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 440.0 651.3 Tm (No clear difference) Tj ET
+0.950 0.960 0.970 rg 54.0 583.0 487.0 41.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 583.0 m 541.0 583.0 l S
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 610.3 Tm (Single Referral > 7 days- 24th Jul / OLX - Ashwin - 2W - 17 Jul) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 370.0 610.3 Tm (<0.001) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 440.0 610.3 Tm (Different in this sample) Tj ET
+1.000 1.000 1.000 rg 54.0 542.0 487.0 41.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 542.0 m 541.0 542.0 l S
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 569.3 Tm (Khanna- 2W 26th Jul / OLX - Ashwin - 2W - 17 Jul) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 370.0 569.3 Tm (<0.001) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 440.0 569.3 Tm (Different in this sample) Tj ET
+BT /F2 13.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 511.0 Tm (Warm cohorts) Tj ET
+0.090 0.130 0.170 rg 54.0 461.0 487.0 41.0 re f
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 60.0 487.3 Tm (Comparison) Tj ET
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 370.0 487.3 Tm (p-value) Tj ET
+BT /F2 7.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 440.0 487.3 Tm (Reading) Tj ET
+1.000 1.000 1.000 rg 54.0 420.0 487.0 41.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 420.0 m 541.0 420.0 l S
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 447.3 Tm (PreOb-Ob Fees Paid 29th Jul \(set 1\) / PreOb-Ob Fees Paid 29th Jul \(set 2\)) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 370.0 447.3 Tm (1.000) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 440.0 447.3 Tm (No clear difference) Tj ET
+0.950 0.960 0.970 rg 54.0 379.0 487.0 41.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 379.0 m 541.0 379.0 l S
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 406.3 Tm (PreOb-Ob Fees Paid 29th Jul \(set 1\) / AI Connected but not Connected by TC-) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 397.1 Tm (Set 1) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 370.0 406.3 Tm (0.580) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 440.0 406.3 Tm (No clear difference) Tj ET
+1.000 1.000 1.000 rg 54.0 338.0 487.0 41.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 338.0 m 541.0 338.0 l S
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 365.3 Tm (PreOb-Ob Fees Paid 29th Jul \(set 2\) / AI Connected but not Connected by TC-) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 356.1 Tm (Set 1) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 370.0 365.3 Tm (0.775) Tj ET
+BT /F1 7.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 440.0 365.3 Tm (No clear difference) Tj ET
+BT /F2 13.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 307.0 Tm (Operational read) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 289.0 Tm (- Treat Single Referral > 7 days and Khanna - 2W 26th Jul as co-leading cold sources; the sample does not) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 276.0 Tm (support a reliable ordering.) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 256.0 Tm (- The OLX cohort ranks third, but its estimate is based on four FT events. Check the flagged records) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 243.0 Tm (before making a budget decision.) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 223.0 Tm (- Warm-source rates are directionally ranked only. The current sample does not separate the leading warm) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 210.0 Tm (cohorts with confidence.) Tj ET
+BT /F1 8.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 188.5 Tm (Pairwise p-values are unadjusted. A non-significant result is not proof that the cohort rates are equal.) Tj ET
+BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 161.0 Tm (Funnel drop-off across the leading cohorts) Tj ET
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 149.0 Tm (Lead counts use a logarithmic scale so each funnel stage remains visible.) Tj ET
+0.840 0.870 0.890 RG 0.5 w 103.0 71.0 m 365.0 71.0 l S
+BT /F1 6.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 78.0 67.5 Tm (1) Tj ET
+0.840 0.870 0.890 RG 0.5 w 103.0 88.8 m 365.0 88.8 l S
+BT /F1 6.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 78.0 85.2 Tm (10) Tj ET
+0.840 0.870 0.890 RG 0.5 w 103.0 106.5 m 365.0 106.5 l S
+BT /F1 6.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 78.0 103.0 Tm (100) Tj ET
+0.840 0.870 0.890 RG 0.5 w 103.0 124.2 m 365.0 124.2 l S
+BT /F1 6.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 78.0 120.8 Tm (1k) Tj ET
+0.840 0.870 0.890 RG 0.5 w 103.0 142.0 m 365.0 142.0 l S
+BT /F1 6.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 78.0 138.5 Tm (10k) Tj ET
+0.840 0.870 0.890 RG 0.4 w 103.0 142.0 m 103.0 71.0 l S
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 91.0 59.0 Tm (Leads) Tj ET
+0.840 0.870 0.890 RG 0.4 w 168.5 142.0 m 168.5 71.0 l S
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 146.5 59.0 Tm (Attempted) Tj ET
+0.840 0.870 0.890 RG 0.4 w 234.0 142.0 m 234.0 71.0 l S
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 212.0 59.0 Tm (Connected) Tj ET
+0.840 0.870 0.890 RG 0.4 w 299.5 142.0 m 299.5 71.0 l S
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 277.5 59.0 Tm (Interested) Tj ET
+0.840 0.870 0.890 RG 0.4 w 365.0 142.0 m 365.0 71.0 l S
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 353.0 59.0 Tm (FT) Tj ET
+0.210 0.420 0.600 RG 1.5 w 103.0 127.4 m 168.5 127.1 l S
+0.210 0.420 0.600 RG 1.5 w 168.5 127.1 m 234.0 121.4 l S
+0.210 0.420 0.600 RG 1.5 w 234.0 121.4 m 299.5 86.0 l S
+0.210 0.420 0.600 RG 1.5 w 299.5 86.0 m 365.0 91.3 l S
+0.210 0.420 0.600 rg 100.8 125.2 4.4 4.4 re f
+0.210 0.420 0.600 rg 166.3 124.9 4.4 4.4 re f
+0.210 0.420 0.600 rg 231.8 119.2 4.4 4.4 re f
+0.210 0.420 0.600 rg 297.3 83.8 4.4 4.4 re f
+0.210 0.420 0.600 rg 362.8 89.1 4.4 4.4 re f
+0.210 0.420 0.600 RG 2.0 w 382.0 138.0 m 394.0 138.0 l S
+BT /F1 6.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 399.0 135.5 Tm (Single Referral > 7 d...) Tj ET
+0.760 0.400 0.120 RG 1.5 w 103.0 127.6 m 168.5 126.7 l S
+0.760 0.400 0.120 RG 1.5 w 168.5 126.7 m 234.0 120.0 l S
+0.760 0.400 0.120 RG 1.5 w 234.0 120.0 m 299.5 94.1 l S
+0.760 0.400 0.120 RG 1.5 w 299.5 94.1 m 365.0 91.3 l S
+0.760 0.400 0.120 rg 100.8 125.4 4.4 4.4 re f
+0.760 0.400 0.120 rg 166.3 124.5 4.4 4.4 re f
+0.760 0.400 0.120 rg 231.8 117.8 4.4 4.4 re f
+0.760 0.400 0.120 rg 297.3 91.9 4.4 4.4 re f
+0.760 0.400 0.120 rg 362.8 89.1 4.4 4.4 re f
+0.760 0.400 0.120 RG 2.0 w 382.0 126.0 m 394.0 126.0 l S
+BT /F1 6.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 399.0 123.5 Tm (Khanna- 2W 26th Jul) Tj ET
+0.210 0.510 0.390 RG 1.5 w 103.0 136.9 m 168.5 124.0 l S
+0.210 0.510 0.390 RG 1.5 w 168.5 124.0 m 234.0 116.6 l S
+0.210 0.510 0.390 RG 1.5 w 234.0 116.6 m 299.5 87.9 l S
+0.210 0.510 0.390 RG 1.5 w 299.5 87.9 m 365.0 81.7 l S
+0.210 0.510 0.390 rg 100.8 134.7 4.4 4.4 re f
+0.210 0.510 0.390 rg 166.3 121.8 4.4 4.4 re f
+0.210 0.510 0.390 rg 231.8 114.4 4.4 4.4 re f
+0.210 0.510 0.390 rg 297.3 85.7 4.4 4.4 re f
+0.210 0.510 0.390 rg 362.8 79.5 4.4 4.4 re f
+0.210 0.510 0.390 RG 2.0 w 382.0 114.0 m 394.0 114.0 l S
+BT /F1 6.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 399.0 111.5 Tm (OLX - Ashwin - 2W - 1...) Tj ET
+0.730 0.270 0.260 RG 1.5 w 103.0 127.3 m 168.5 127.0 l S
+0.730 0.270 0.260 RG 1.5 w 168.5 127.0 m 234.0 120.9 l S
+0.730 0.270 0.260 RG 1.5 w 234.0 120.9 m 299.5 106.7 l S
+0.730 0.270 0.260 RG 1.5 w 299.5 106.7 m 365.0 86.0 l S
+0.730 0.270 0.260 rg 100.8 125.1 4.4 4.4 re f
+0.730 0.270 0.260 rg 166.3 124.8 4.4 4.4 re f
+0.730 0.270 0.260 rg 231.8 118.7 4.4 4.4 re f
+0.730 0.270 0.260 rg 297.3 104.5 4.4 4.4 re f
+0.730 0.270 0.260 rg 362.8 83.8 4.4 4.4 re f
+0.730 0.270 0.260 RG 2.0 w 382.0 102.0 m 394.0 102.0 l S
+BT /F1 6.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 399.0 99.5 Tm (PreOb-Ob Fees Paid 29...) Tj ET
+0.430 0.350 0.620 RG 1.5 w 103.0 127.6 m 168.5 127.4 l S
+0.430 0.350 0.620 RG 1.5 w 168.5 127.4 m 234.0 121.8 l S
+0.430 0.350 0.620 RG 1.5 w 234.0 121.8 m 299.5 108.0 l S
+0.430 0.350 0.620 RG 1.5 w 299.5 108.0 m 365.0 86.0 l S
+0.430 0.350 0.620 rg 100.8 125.4 4.4 4.4 re f
+0.430 0.350 0.620 rg 166.3 125.2 4.4 4.4 re f
+0.430 0.350 0.620 rg 231.8 119.6 4.4 4.4 re f
+0.430 0.350 0.620 rg 297.3 105.8 4.4 4.4 re f
+0.430 0.350 0.620 rg 362.8 83.8 4.4 4.4 re f
+0.430 0.350 0.620 RG 2.0 w 382.0 90.0 m 394.0 90.0 l S
+BT /F1 6.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 399.0 87.5 Tm (PreOb-Ob Fees Paid 29...) Tj ET
+0.160 0.520 0.570 RG 1.5 w 103.0 127.3 m 168.5 126.5 l S
+0.160 0.520 0.570 RG 1.5 w 168.5 126.5 m 234.0 121.4 l S
+0.160 0.520 0.570 RG 1.5 w 234.0 121.4 m 299.5 97.0 l S
+0.160 0.520 0.570 RG 1.5 w 299.5 97.0 m 365.0 83.4 l S
+0.160 0.520 0.570 rg 100.8 125.1 4.4 4.4 re f
+0.160 0.520 0.570 rg 166.3 124.3 4.4 4.4 re f
+0.160 0.520 0.570 rg 231.8 119.2 4.4 4.4 re f
+0.160 0.520 0.570 rg 297.3 94.8 4.4 4.4 re f
+0.160 0.520 0.570 rg 362.8 81.2 4.4 4.4 re f
+0.160 0.520 0.570 RG 2.0 w 382.0 78.0 m 394.0 78.0 l S
+BT /F1 6.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 399.0 75.5 Tm (AI Connected but not ...) Tj ET
+0.840 0.870 0.890 RG 0.7 w 54.0 36.0 m 541.0 36.0 l S
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 19.0 Tm (Vahan lead funnel analysis) Tj ET
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 523.0 19.0 Tm (3) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 3484 >>
+stream
+BT /F2 22.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 784.0 Tm (Method and limitations) Tj ET
+BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 765.0 Tm (Generated directly from the CSV; no saved notebook output is used) Tj ET
+0.210 0.420 0.600 RG 1.5 w 54.0 746.0 m 541.0 746.0 l S
+BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 716.0 Tm (Cohort method) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 699.5 Tm (The generator deduplicates known phone hashes by keeping the row with the most advanced recorded) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 685.5 Tm (funnel state. Missing phone hashes remain separate records. It aggregates by lead_source, splits) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 671.5 Tm (warm sources by the PreOb and AI Connected name patterns, excludes cohorts below 100 leads, and) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 657.5 Tm (calculates Wilson intervals.) Tj ET
+BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 626.0 Tm (Statistical comparison) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 609.5 Tm (Fisher exact tests compare the FT and non-FT counts for each pair among the displayed top three in) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 595.5 Tm (each segment. Tests are unadjusted and the small positive counts limit the conclusions.) Tj ET
+BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 564.0 Tm (Model interpretation) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 547.5 Tm (The notebook's model includes call, interest and onboarding fields, but their timing relative to FT) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 533.5 Tm (is not established in the supplied extract. Random cross-validation metrics and feature rankings are) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 519.5 Tm (retrospective descriptions, not prospective estimates of who can be identified at upload. This) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 505.5 Tm (report does not repeat them as operational performance claims.) Tj ET
+BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 474.0 Tm (Next analysis step) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 457.5 Tm (Before lead scoring is considered, establish event timestamps and the exact decision point, then) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 443.5 Tm (evaluate features available at that point on a later time period held out from training.) Tj ET
+BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 412.0 Tm (Source and definitions) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 395.5 Tm (Input file: Vahan_Case_Study.csv. First Trip is represented by FT_after_upload. Minimum cohort size:) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 381.5 Tm (100. Confidence intervals: 95% Wilson score intervals. Pairwise tests: two-sided Fisher exact tests.) Tj ET
+BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 350.0 Tm (Data quality follow-up) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 333.5 Tm (Investigate repeated source attribution and FT records without a logged connection in the upstream) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 319.5 Tm (pipeline. Keep these checks in future refreshes so changes in the export are visible.) Tj ET
+0.840 0.870 0.890 RG 0.7 w 54.0 36.0 m 541.0 36.0 l S
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 19.0 Tm (Vahan lead funnel analysis) Tj ET
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 523.0 19.0 Tm (4) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 12 0 R >>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000168 00000 n 
+0000000245 00000 n 
+0000000315 00000 n 
+0000000390 00000 n 
+0000004273 00000 n 
+0000004409 00000 n 
+0000013109 00000 n 
+0000013245 00000 n 
+0000023185 00000 n 
+0000023323 00000 n 
+0000026860 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R /Info 2 0 R >>
+startxref
+26998
+%%EOF
