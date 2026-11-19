@@ -9,7 +9,24 @@ import unicodedata
 from pathlib import Path
 
 import pandas as pd
+import numpy as np
 from scipy.stats import fisher_exact
+from sklearn.compose import ColumnTransformer
+from sklearn.dummy import DummyClassifier
+from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import (
+    average_precision_score,
+    confusion_matrix,
+    precision_recall_curve,
+    precision_score,
+    recall_score,
+    roc_auc_score,
+    roc_curve,
+)
+from sklearn.model_selection import StratifiedKFold, cross_val_predict, train_test_split
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 
 PAGE_WIDTH, PAGE_HEIGHT = 595, 842
@@ -96,6 +113,113 @@ def cohort_table(clean: pd.DataFrame) -> pd.DataFrame:
     )
 
 
+def analyze_models(clean: pd.DataFrame) -> dict[str, object]:
+    """Reproduce the notebook's exploratory model comparisons from the cleaned CSV."""
+    model_data = clean[~clean["ft_anomaly"]].copy()
+    model_data["upload_date_parsed"] = pd.to_datetime(model_data["upload_date"], format="%d-%m-%Y")
+    model_data["upload_dow"] = model_data["upload_date_parsed"].dt.day_name()
+    model_data["attempt_per_lead_filled"] = model_data["Attempt per Lead"].fillna(0)
+    categorical = ["lead_source", "upload_dow"]
+    numeric = [
+        "Attempted", "Connected", "Interested", "OB_after_upload",
+        "OB_after_first_attempt", "tag_filled", "attempt_per_lead_filled",
+    ]
+    X = model_data[categorical + numeric]
+    y = model_data["FT_after_upload"].astype(int)
+    scaled = ColumnTransformer([
+        ("cat", OneHotEncoder(handle_unknown="ignore"), categorical),
+        ("num", StandardScaler(), numeric),
+    ])
+    raw = ColumnTransformer([
+        ("cat", OneHotEncoder(handle_unknown="ignore"), categorical),
+    ], remainder="passthrough")
+    candidates = {
+        "Logistic Regression": Pipeline([
+            ("pre", scaled),
+            ("clf", LogisticRegression(class_weight="balanced", max_iter=2000, random_state=42)),
+        ]),
+        "Random Forest": Pipeline([
+            ("pre", raw),
+            ("clf", RandomForestClassifier(n_estimators=300, max_depth=6, class_weight="balanced", random_state=42)),
+        ]),
+        "Gradient Boosting": Pipeline([
+            ("pre", raw),
+            ("clf", GradientBoostingClassifier(n_estimators=200, max_depth=3, random_state=42)),
+        ]),
+        "Dummy baseline": Pipeline([
+            ("pre", raw),
+            ("clf", DummyClassifier(strategy="stratified", random_state=42)),
+        ]),
+    }
+    cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+    results: dict[str, dict[str, object]] = {}
+    for name, pipeline in candidates.items():
+        probabilities = cross_val_predict(pipeline, X, y, cv=cv, method="predict_proba")[:, 1]
+        order = probabilities.argsort()[::-1]
+        top_count = max(1, int(len(y) * 0.01))
+        captured = int(y.to_numpy()[order[:top_count]].sum())
+        results[name] = {
+            "roc_auc": float(roc_auc_score(y, probabilities)),
+            "pr_auc": float(average_precision_score(y, probabilities)),
+            "top1_capture": captured / int(y.sum()),
+            "captured": captured,
+            "probabilities": probabilities,
+        }
+
+    logistic = candidates["Logistic Regression"]
+    cv_predictions = cross_val_predict(logistic, X, y, cv=cv, method="predict")
+    matrix = confusion_matrix(y, cv_predictions, labels=[0, 1])
+    train_x, test_x, train_y, test_y = train_test_split(
+        X, y, test_size=0.20, stratify=y, random_state=42
+    )
+    logistic.fit(train_x, train_y)
+    holdout_predictions = logistic.predict(test_x)
+    holdout = {
+        "n": len(test_y),
+        "positives": int(test_y.sum()),
+        "precision": float(precision_score(test_y, holdout_predictions, zero_division=0)),
+        "recall": float(recall_score(test_y, holdout_predictions, zero_division=0)),
+        "f1": float(2 * precision_score(test_y, holdout_predictions, zero_division=0) * recall_score(test_y, holdout_predictions, zero_division=0) /
+                     max(precision_score(test_y, holdout_predictions, zero_division=0) + recall_score(test_y, holdout_predictions, zero_division=0), 1e-12)),
+    }
+
+    logistic.fit(X, y)
+    logistic_names = logistic.named_steps["pre"].get_feature_names_out()
+    coefficients = logistic.named_steps["clf"].coef_[0]
+    logistic_features = sorted(
+        [(str(name).split("__", 1)[-1], float(value)) for name, value in zip(logistic_names, coefficients)],
+        key=lambda item: abs(item[1]), reverse=True,
+    )[:8]
+
+    forest = candidates["Random Forest"]
+    forest.fit(X, y)
+    forest_names = forest.named_steps["pre"].get_feature_names_out()
+    importances = forest.named_steps["clf"].feature_importances_
+    grouped_importance: dict[str, float] = {}
+    for feature_name, importance in zip(forest_names, importances):
+        clean_name = str(feature_name).split("__", 1)[-1]
+        base_feature = next((feature for feature in categorical + numeric if clean_name == feature or clean_name.startswith(feature + "_")), clean_name)
+        grouped_importance[base_feature] = grouped_importance.get(base_feature, 0.0) + float(importance)
+    forest_features = sorted(grouped_importance.items(), key=lambda item: item[1], reverse=True)[:8]
+
+    probabilities = results["Logistic Regression"]["probabilities"]
+    fpr, tpr, _ = roc_curve(y, probabilities)
+    pr_precision, pr_recall, _ = precision_recall_curve(y, probabilities)
+    order = probabilities.argsort()[::-1]
+    ordered_y = y.to_numpy()[order]
+    gains = []
+    for fraction in (0.01, 0.02, 0.05, 0.10, 0.20, 0.50, 1.0):
+        count = max(1, int(len(ordered_y) * fraction))
+        gains.append((fraction, int(ordered_y[:count].sum()) / int(y.sum())))
+
+    return {
+        "n": len(y), "positives": int(y.sum()), "positive_rate": float(y.mean()),
+        "results": results, "matrix": matrix, "holdout": holdout,
+        "precision": pr_precision, "recall": pr_recall, "fpr": fpr, "tpr": tpr,
+        "gains": gains, "logistic_features": logistic_features, "forest_features": forest_features,
+    }
+
+
 def ascii_text(value: object) -> str:
     text = unicodedata.normalize("NFKD", str(value)).encode("ascii", "ignore").decode("ascii")
     text = re.sub(r"\s+", " ", text).strip()
@@ -111,9 +235,9 @@ class PdfPage:
     def _color(rgb: tuple[float, float, float]) -> str:
         return " ".join(f"{channel:.3f}" for channel in rgb)
 
-    def text(self, x: float, top: float, value: object, size: float = 10, bold: bool = False,
+    def text(self, x: float, top: float, value: object, size: float = 10, bold: bool = False, mono: bool = False,
              color: tuple[float, float, float] = INK) -> None:
-        font = "F2" if bold else "F1"
+        font = "F3" if mono else ("F2" if bold else "F1")
         y = PAGE_HEIGHT - top - size
         self.commands.append(
             f"BT /{font} {size:.1f} Tf {self._color(color)} rg 1 0 0 1 {x:.1f} {y:.1f} Tm ({ascii_text(value)}) Tj ET"
@@ -164,8 +288,8 @@ def write_pdf(output: Path, pages: list[PdfPage]) -> None:
     objects: list[bytes] = []
     page_ids = []
     page_tree_id = 3
-    font_regular_id, font_bold_id = 4, 5
-    next_id = 6
+    font_regular_id, font_bold_id, font_mono_id = 4, 5, 6
+    next_id = 7
     for page in pages:
         content = "\n".join(page.commands).encode("latin-1")
         stream_id = next_id
@@ -174,7 +298,7 @@ def write_pdf(output: Path, pages: list[PdfPage]) -> None:
         objects.append(f"{stream_id} 0 obj\n<< /Length {len(content)} >>\nstream\n".encode() + content + b"\nendstream\nendobj\n")
         objects.append(
             f"{page_id} 0 obj\n<< /Type /Page /Parent {page_tree_id} 0 R /MediaBox [0 0 {PAGE_WIDTH} {PAGE_HEIGHT}] "
-            f"/Resources << /Font << /F1 {font_regular_id} 0 R /F2 {font_bold_id} 0 R >> >> /Contents {stream_id} 0 R >>\nendobj\n".encode()
+            f"/Resources << /Font << /F1 {font_regular_id} 0 R /F2 {font_bold_id} 0 R /F3 {font_mono_id} 0 R >> >> /Contents {stream_id} 0 R >>\nendobj\n".encode()
         )
         page_ids.append(page_id)
     page_tree = f"{page_tree_id} 0 obj\n<< /Type /Pages /Kids [{' '.join(f'{i} 0 R' for i in page_ids)}] /Count {len(page_ids)} >>\nendobj\n".encode()
@@ -182,9 +306,10 @@ def write_pdf(output: Path, pages: list[PdfPage]) -> None:
     catalog = f"{catalog_id} 0 obj\n<< /Type /Catalog /Pages {page_tree_id} 0 R >>\nendobj\n".encode()
     info_id = 2
     info = f"{info_id} 0 obj\n<< /Title (Vahan Lead-Source Cohort Performance) /Author (Vahan lead funnel analysis) >>\nendobj\n".encode()
-    font_regular = f"{font_regular_id} 0 obj\n<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>\nendobj\n".encode()
-    font_bold = f"{font_bold_id} 0 obj\n<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>\nendobj\n".encode()
-    all_objects = [catalog, info, page_tree, font_regular, font_bold, *objects]
+    font_regular = f"{font_regular_id} 0 obj\n<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>\nendobj\n".encode()
+    font_bold = f"{font_bold_id} 0 obj\n<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>\nendobj\n".encode()
+    font_mono = f"{font_mono_id} 0 obj\n<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>\nendobj\n".encode()
+    all_objects = [catalog, info, page_tree, font_regular, font_bold, font_mono, *objects]
     pdf = bytearray(b"%PDF-1.4\n%\xe2\xe3\xcf\xd3\n")
     offsets = [0]
     for item in all_objects:
@@ -308,19 +433,89 @@ def add_funnel_chart(page: PdfPage, top: float, cohorts: pd.DataFrame) -> float:
     return plot_bottom + 18
 
 
+def add_curve_chart(page: PdfPage, x: float, top: float, width: float, height: float,
+                    title: str, x_values: object, y_values: object,
+                    x_label: str, y_label: str, baseline: float | None = None) -> None:
+    page.text(x, top, title, size=10, bold=True)
+    left, right = x + 31, x + width - 8
+    plot_top, plot_bottom = top + 20, top + height - 24
+    for tick in (0, 0.5, 1):
+        gy = plot_bottom - tick * (plot_bottom - plot_top)
+        gx = left + tick * (right - left)
+        page.line(left, gy, right, gy, color=GRID, width=0.45)
+        page.line(gx, plot_top, gx, plot_bottom, color=GRID, width=0.45)
+        page.text(left - 18, gy - 3, f"{tick:.1f}", size=6, color=MUTED)
+        page.text(gx - 6, plot_bottom + 3, f"{tick:.1f}", size=6, color=MUTED)
+    if baseline is not None:
+        by = plot_bottom - baseline * (plot_bottom - plot_top)
+        page.line(left, by, right, by, color=ORANGE, width=0.8)
+    xs = np.asarray(x_values, dtype=float)
+    ys = np.asarray(y_values, dtype=float)
+    if len(xs) > 180:
+        indices = np.linspace(0, len(xs) - 1, 180).astype(int)
+        xs, ys = xs[indices], ys[indices]
+    points = [
+        (left + float(a) * (right - left), plot_bottom - float(b) * (plot_bottom - plot_top))
+        for a, b in zip(xs, ys)
+    ]
+    for (x1, y1), (x2, y2) in zip(points, points[1:]):
+        page.line(x1, y1, x2, y2, color=BLUE, width=1.3)
+    page.text(left + 16, plot_bottom + 13, x_label, size=6.5, color=MUTED)
+    page.text(x + 1, plot_top + 3, y_label, size=6.5, color=MUTED)
+
+
+def add_gain_chart(page: PdfPage, top: float, gains: list[tuple[float, float]]) -> None:
+    page.text(LEFT, top, "Cumulative capture when leads are ranked by model score", size=11, bold=True)
+    page.text(LEFT, top + 15, "Retrospective out-of-fold estimate; not an intake-time forecast.", size=8, color=MUTED)
+    left, right = LEFT + 42, RIGHT - 8
+    plot_top, plot_bottom = top + 29, top + 112
+    for tick in (0, 0.5, 1):
+        gx = left + tick * (right - left)
+        gy = plot_bottom - tick * (plot_bottom - plot_top)
+        page.line(left, gy, right, gy, color=GRID, width=0.5)
+        page.line(gx, plot_top, gx, plot_bottom, color=GRID, width=0.5)
+        page.text(gx - 7, plot_bottom + 3, f"{tick:.0%}", size=7, color=MUTED)
+        page.text(left - 30, gy - 3, f"{tick:.0%}", size=7, color=MUTED)
+    page.line(left, plot_bottom, right, plot_top, color=ORANGE, width=0.8)
+    points = [(left + fraction * (right - left), plot_bottom - capture * (plot_bottom - plot_top)) for fraction, capture in gains]
+    for (x1, y1), (x2, y2) in zip(points, points[1:]):
+        page.line(x1, y1, x2, y2, color=BLUE, width=1.8)
+    for x, y in points:
+        page.rect(x - 2.2, y - 2.2, 4.4, 4.4, fill=BLUE)
+
+
+def add_feature_chart(page: PdfPage, x: float, top: float, width: float,
+                      title: str, features: list[tuple[str, float]], signed: bool = False) -> None:
+    page.text(x, top, title, size=10, bold=True)
+    entries = features[:7]
+    max_value = max((abs(value) for _, value in entries), default=1.0) or 1.0
+    bar_x = x + 112
+    bar_width = width - 143
+    for index, (name, value) in enumerate(entries):
+        y = top + 24 + index * 19
+        label = name if len(name) < 19 else name[:16] + "..."
+        page.text(x, y, label, size=7, color=INK)
+        length = abs(value) / max_value * bar_width
+        color = (BLUE if value >= 0 else RED) if signed else GREEN
+        page.rect(bar_x, y + 2, length, 7, fill=color)
+        page.text(bar_x + bar_width + 5, y, f"{value:+.2f}" if signed else f"{value:.2f}", size=6.7, color=MUTED)
+
+
 def make_report(input_csv: Path, output_pdf: Path) -> dict[str, int]:
     clean, stats = load_and_clean(input_csv)
     cohorts = cohort_table(clean)
-    pages = [PdfPage(i) for i in range(1, 5)]
+    models = analyze_models(clean)
+    pages = [PdfPage(i) for i in range(1, 9)]
 
     # Page 1: executive summary and audit counts.
     page = pages[0]
     y = add_page_header(page, "Lead-source cohort performance", "Vahan sourcing and telecalling funnel | First Trip conversion analysis")
     y = page.paragraph(LEFT, y, "Executive summary", RIGHT - LEFT, size=14, leading=19, bold=True) + 7
     y = page.paragraph(LEFT, y,
-        "This report compares lead sources by the share of uploaded leads that reached First Trip (FT). "
-        "Warm and cold sources are ranked separately because they enter the funnel at different stages. "
-        "Wilson confidence intervals and Fisher exact tests keep the small event counts in view.",
+        "This report answers three questions: which lead-source cohorts have the strongest observed FT rate, "
+        "how the SQL aggregation reproduces that ranking, and what an exploratory model associates with FT. "
+        "Warm and cold sources are ranked separately. Confidence intervals, tests and event counts keep the "
+        "small sample in view.",
         RIGHT - LEFT, size=10, leading=15) + 10
     page.rect(LEFT, y, RIGHT - LEFT, 61, fill=PALE, stroke=GRID)
     page.rect(LEFT, y, 4, 61, fill=BLUE)
@@ -344,6 +539,10 @@ def make_report(input_csv: Path, output_pdf: Path) -> dict[str, int]:
         "Known phone hashes keep their most advanced recorded funnel state. Missing hashes cannot identify a "
         "person, so each row is retained. Inconsistent FT rows remain in cohort rates and are flagged.",
         RIGHT - LEFT, size=8.5, leading=12, color=MUTED)
+    page.paragraph(LEFT, 692,
+        f"Model sample: {models['positives']} FT events in {models['n']:,} records ({models['positive_rate']:.2%}). "
+        "Model metrics are retrospective: several inputs may only be known after upload or near the FT outcome.",
+        RIGHT - LEFT, size=9, leading=13, color=MUTED)
 
     # Page 2: current ranking and confidence intervals.
     page = pages[1]
@@ -402,26 +601,161 @@ def make_report(input_csv: Path, output_pdf: Path) -> dict[str, int]:
         RIGHT - LEFT, size=8.5, leading=12, color=MUTED) + 12
     add_funnel_chart(page, y, cohorts)
 
-    # Page 4: repeatable method and model caveat.
+    # Page 4: SQL equivalent and grouped output.
     page = pages[3]
-    y = add_page_header(page, "Method and limitations", "Generated directly from the CSV; no saved notebook output is used")
-    sections = [
-        ("Cohort method", "The generator deduplicates known phone hashes by keeping the row with the most advanced recorded funnel state. Missing phone hashes remain separate records. It aggregates by lead_source, splits warm sources by the PreOb and AI Connected name patterns, excludes cohorts below 100 leads, and calculates Wilson intervals."),
-        ("Statistical comparison", "Fisher exact tests compare the FT and non-FT counts for each pair among the displayed top three in each segment. Tests are unadjusted and the small positive counts limit the conclusions."),
-        ("Model interpretation", "The notebook's model includes call, interest and onboarding fields, but their timing relative to FT is not established in the supplied extract. Random cross-validation metrics and feature rankings are retrospective descriptions, not prospective estimates of who can be identified at upload. This report does not repeat them as operational performance claims."),
-        ("Next analysis step", "Before lead scoring is considered, establish event timestamps and the exact decision point, then evaluate features available at that point on a later time period held out from training."),
-        ("Source and definitions", f"Input file: {input_csv.name}. First Trip is represented by FT_after_upload. Minimum cohort size: {MIN_LEADS}. Confidence intervals: 95% Wilson score intervals. Pairwise tests: two-sided Fisher exact tests."),
+    y = add_page_header(page, "SQL aggregation", "The same cohort question expressed as a window-function query")
+    y = page.paragraph(LEFT, y,
+        "The query treats the raw CSV as a leads table, keeps each known phone hash's most advanced funnel state, "
+        "preserves rows with missing identifiers, assigns warm or cold status, and ranks sources within each segment.",
+        RIGHT - LEFT, size=9, leading=13) + 11
+    code_lines = [
+        "WITH ranked AS (",
+        "  SELECT *, ROW_NUMBER() OVER (",
+        "    PARTITION BY COALESCE(candidate_phone, 'missing_' || rowid)",
+        "    ORDER BY FT_after_upload DESC, Interested DESC,",
+        "             Connected DESC, Attempted DESC) AS rn",
+        "  FROM leads",
+        "), one_lead AS (SELECT * FROM ranked WHERE rn = 1),",
+        "cohort AS (",
+        "  SELECT lead_source, SUM(\"Uploaded Leads\") AS leads,",
+        "    CASE WHEN lead_source LIKE '%PreOb%' OR",
+        "      lead_source LIKE '%AI Connected%' THEN 'warm'",
+        "      ELSE 'cold' END AS segment,",
+        "    SUM(FT_after_upload) AS ft,",
+        "    100.0 * SUM(FT_after_upload) / SUM(\"Uploaded Leads\") AS ft_rate",
+        "  FROM one_lead GROUP BY lead_source",
+        "  HAVING SUM(\"Uploaded Leads\") >= 100",
+        ")",
+        "SELECT *, RANK() OVER (PARTITION BY segment",
+        "  ORDER BY ft_rate DESC) AS rank_in_segment FROM cohort;",
     ]
-    for heading, body in sections:
-        page.text(LEFT, y, heading, size=12, bold=True)
-        y += 19
-        y = page.paragraph(LEFT, y, body, RIGHT - LEFT, size=9.5, leading=14) + 15
-    page.text(LEFT, y, "Data quality follow-up", size=12, bold=True)
+    code_top, code_height = y, len(code_lines) * 13 + 15
+    page.rect(LEFT, code_top, RIGHT - LEFT, code_height, fill=PALE, stroke=GRID)
+    for index, line in enumerate(code_lines):
+        page.text(LEFT + 11, code_top + 8 + index * 13, line, size=7.8, mono=True, color=INK)
+    y = code_top + code_height + 15
+    page.text(LEFT, y, "Top three results by segment", size=12, bold=True)
+    y += 21
+    sql_rows = []
+    for segment in ("cold", "warm"):
+        for rank, (_, row) in enumerate(cohorts[cohorts["segment"] == segment].head(3).iterrows(), 1):
+            sql_rows.append([
+                segment.title(), str(rank), str(row["lead_source"]), f"{int(row['leads']):,}",
+                str(int(row["attempted"])), str(int(row["connected"])), str(int(row["interested"])),
+                str(int(row["ft"])), f"{row['ft_rate']:.3%}",
+            ])
+    y = add_table(page, y, ["Segment", "Rank", "Lead source", "Leads", "Attempt", "Connect", "Interest", "FT", "FT rate"],
+                  sql_rows, [42, 28, 174, 46, 43, 43, 43, 25, 43], row_height=39, font_size=6.7)
+    page.paragraph(LEFT, y + 12,
+        "The table reports deduplicated funnel counts. The FT rate ranking matches the cohort section; the "
+        "confidence intervals and anomaly flags are calculated alongside the SQL-style aggregation.",
+        RIGHT - LEFT, size=8.5, leading=12, color=MUTED)
+
+    # Page 5: model question, design, and candidate comparison.
+    page = pages[4]
+    y = add_page_header(page, "Exploratory model", "Which recorded fields are associated with First Trip?")
+    y = page.paragraph(LEFT, y,
+        f"Target: FT_after_upload. The model uses {models['n']:,} deduplicated records after excluding "
+        f"{stats['ft_anomalies']} raw FT-without-connection anomalies; the remaining target has "
+        f"{models['positives']} positive examples ({models['positive_rate']:.2%}). Five-fold stratified "
+        "cross-validation is used because one small holdout contains very few FT events.",
+        RIGHT - LEFT, size=9.5, leading=14) + 9
+    page.text(LEFT, y, "Candidate model comparison", size=12, bold=True)
+    y += 21
+    metric_rows = []
+    ordered_models = sorted(models["results"].items(), key=lambda item: item[1]["pr_auc"], reverse=True)
+    for name, result in ordered_models:
+        metric_rows.append([
+            name, f"{result['roc_auc']:.3f}", f"{result['pr_auc']:.3f}",
+            f"{result['top1_capture']:.1%}",
+        ])
+    y = add_table(page, y, ["Model", "ROC-AUC", "PR-AUC", "Top 1% FT capture"], metric_rows,
+                  [210, 75, 75, RIGHT - LEFT - 360], row_height=36, font_size=8)
+    y += 14
+    for heading, body in [
+        ("Candidate choice", "Logistic regression is included for readable coefficient directions. Random forest provides a non-linear comparison; gradient boosting tests another tree approach; the stratified dummy model is the no-signal reference."),
+        ("Fields used", "Lead source, upload weekday, Attempted, Connected, Interested, onboarding flags, tag_filled, and Attempt per Lead. Percentage columns and FT_after_first_attempt are excluded because they encode the target or a closely related outcome. The unreliable timing field is also excluded."),
+        ("Timing limitation", "The extract does not establish that call, interest, or onboarding fields are known before FT or at the time of lead assignment. Random cross-validation cannot fix this. Scores and capture rates below describe retrospective ranking only; they are not an operational forecast."),
+    ]:
+        page.text(LEFT, y, heading, size=11, bold=True)
+        y += 17
+        y = page.paragraph(LEFT, y, body, RIGHT - LEFT, size=8.8, leading=12.5) + 10
+
+    # Page 6: classification detail, curves, and gains.
+    page = pages[5]
+    y = add_page_header(page, "Model evaluation", "Out-of-fold predictions from five-fold stratified cross-validation")
+    matrix = models["matrix"]
+    page.text(LEFT, y, "Logistic regression confusion matrix", size=11, bold=True)
     y += 19
+    matrix_rows = [
+        ["Actual / predicted", "No FT", "FT"],
+        ["No FT", f"{int(matrix[0,0]):,}", f"{int(matrix[0,1]):,}"],
+        ["FT", f"{int(matrix[1,0]):,}", f"{int(matrix[1,1]):,}"],
+    ]
+    y = add_table(page, y, matrix_rows[0], matrix_rows[1:], [190, 130, RIGHT - LEFT - 320], row_height=27, font_size=8)
+    y += 6
+    holdout = models["holdout"]
     page.paragraph(LEFT, y,
-        "Investigate repeated source attribution and FT records without a logged connection in the upstream "
-        "pipeline. Keep these checks in future refreshes so changes in the export are visible.",
-        RIGHT - LEFT, size=9.5, leading=14)
+        f"Single 80/20 holdout: {holdout['n']:,} test records with {holdout['positives']} FT events; "
+        f"FT precision {holdout['precision']:.3f}, recall {holdout['recall']:.3f}, F1 {holdout['f1']:.3f}. "
+        "A few positives moving between folds can materially change these values.",
+        RIGHT - LEFT, size=8.5, leading=12, color=MUTED)
+    chart_top = 254
+    page.text(LEFT, chart_top - 12, "Threshold-independent ranking views", size=11, bold=True)
+    logistic_result = models["results"]["Logistic Regression"]
+    add_curve_chart(page, LEFT, chart_top, 225, 145, f"ROC (AUC {logistic_result['roc_auc']:.3f})",
+                    models["fpr"], models["tpr"], "False positive rate", "True positive rate")
+    add_curve_chart(page, LEFT + 250, chart_top, 225, 145, f"Precision-recall (AP {logistic_result['pr_auc']:.3f})",
+                    models["recall"], models["precision"], "Recall", "Precision", baseline=models["positive_rate"])
+    gain_top = 428
+    add_gain_chart(page, gain_top, models["gains"])
+    one_percent = logistic_result["top1_capture"]
+    page.paragraph(LEFT, 573,
+        f"In this retrospective cross-validation, the highest-scored 1% contains {logistic_result['captured']} of "
+        f"{models['positives']} FT events ({one_percent:.1%}). This is not evidence of equivalent capture in live calling.",
+        RIGHT - LEFT, size=8.8, leading=12, color=MUTED)
+
+    # Page 7: model coefficients and feature importances.
+    page = pages[6]
+    y = add_page_header(page, "Factors associated with FT", "Logistic regression coefficients and random forest importances")
+    add_feature_chart(page, LEFT, y + 4, 235, "Logistic regression", models["logistic_features"], signed=True)
+    add_feature_chart(page, LEFT + 250, y + 4, 235, "Random forest", models["forest_features"], signed=False)
+    page.text(LEFT, y + 174, "How to interpret these rankings", size=11, bold=True)
+    page.paragraph(LEFT, y + 194,
+        "A positive logistic coefficient means a higher fitted association with FT within this model; a negative "
+        "coefficient means the reverse. Random forest importance indicates how much a field contributes to tree "
+        "splits, not its direction. Correlated and nested funnel fields can trade off coefficient weight. Neither "
+        "model establishes a causal effect, and their shared use of downstream fields can inflate apparent signal.",
+        RIGHT - LEFT, size=9, leading=13)
+    page.text(LEFT, y + 280, "Feature timing remains unresolved", size=11, bold=True)
+    page.paragraph(LEFT, y + 300,
+        "OB_after_upload is an outcome-stage field, while Connected, Interested and tag_filled may be logged after "
+        "a call. Their association is useful for describing this dataset, not for deciding which newly uploaded lead "
+        "to call first. A prospective model needs timestamped features and a time-based holdout.",
+        RIGHT - LEFT, size=9, leading=13, color=MUTED)
+
+    # Page 8: recommendations and next steps.
+    page = pages[7]
+    y = add_page_header(page, "Recommendations", "Actions supported by the current evidence")
+    olx = cohorts[(cohorts["segment"] == "cold") & cohorts["lead_source"].astype(str).str.contains("OLX", case=False)].head(1)
+    olx_attempt = f" Its attempt rate is {olx.iloc[0]['attempt_rate']:.1%}." if len(olx) else ""
+    recommendations = [
+        ("Fix source attribution and event logging", "Investigate repeated phone hashes and FT records with no logged connection upstream. Keep missing phone hashes distinct unless an alternative stable identifier is available."),
+        ("Treat the two leading cold sources as co-leaders", "Single Referral > 7 days and Khanna - 2W 26th Jul have similar FT rates and Fisher exact p = 1.0. A larger sample is needed before a budget decision depends on their ordering."),
+        ("Review OLX attempt coverage before scaling", f"OLX has four FT events and three flagged connection anomalies.{olx_attempt} Review the early-funnel handoff before drawing a channel-quality conclusion."),
+        ("Use the model section as retrospective analysis", "The model surfaces associations such as onboarding, connection and tag completion, but timing and causality are unverified. Do not filter leads or promise conversion capture from these scores."),
+        ("Re-evaluate with timestamped data", "Define the decision point, retain only features known then, and hold out a later date range. Accumulate more FT outcomes before interpreting model differences as stable."),
+    ]
+    for index, (heading, body) in enumerate(recommendations, 1):
+        page.rect(LEFT, y + 2, 22, 22, fill=BLUE)
+        page.text(LEFT + 7, y + 7, str(index), size=9, color=(1, 1, 1), bold=True)
+        page.text(LEFT + 34, y, heading, size=11, bold=True)
+        y = page.paragraph(LEFT + 34, y + 17, body, RIGHT - LEFT - 34, size=9, leading=13) + 14
+    page.line(LEFT, y + 1, RIGHT, y + 1)
+    page.paragraph(LEFT, y + 12,
+        f"Source: {input_csv.name}. FT means First Trip (`FT_after_upload`). Cohorts under {MIN_LEADS} leads are excluded. "
+        "Wilson intervals are 95%; pairwise p-values are two-sided Fisher exact tests. Findings describe this extract.",
+        RIGHT - LEFT, size=8, leading=11, color=MUTED)
 
     for pdf_page in pages:
         pdf_page.footer()

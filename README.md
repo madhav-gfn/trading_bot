@@ -10,7 +10,7 @@ The analysis uses the supplied case study extract. It is a one-time observationa
 - `generate_report.py` regenerates a PDF report from the CSV without relying on saved notebook outputs.
 - `cohort_analysis_summary.md` is a short write-up of the cohort results and their limitations.
 - `Vahan_Case_Study.csv` is the source data used by the notebook.
-- `Vahan_Case_Study_Submission.pdf` is the supplied case study brief.
+- `Vahan_Case_Study_Submission.pdf` is the reference submission whose content the generated report follows.
 - `requirements.txt` lists the Python packages used by the notebook.
 
 ## Running the analysis
@@ -30,7 +30,7 @@ To generate the report PDF from the current CSV, run:
 python generate_report.py
 ```
 
-This writes `Vahan_Case_Study_Report.pdf` in the project directory. The source submission PDF is left untouched. Use `--input` and `--output` to select different paths.
+This writes `Vahan_Case_Study_Report.pdf` in the project directory. The source submission PDF is left untouched. The generated report covers data integrity, cohort rankings, SQL aggregation, model comparison and evaluation, factor analysis, charts, and recommendations. Use `--input` and `--output` to select different paths.
 
 ## What the analysis does
 
@@ -60,5 +60,5 @@ The notebook was expanded with a SQL cross-check and an exploratory model sectio
 
 The audit kept rows with missing phone hashes separate during deduplication, aligned the SQL version with that rule, and added the notebook's SciPy and JupyterLab dependencies. The model interpretation and recommendations now state the limits of its retrospective features.
 
-The project now includes a PDF report generator. It recalculates data checks, cohort rates, confidence intervals and pairwise tests from the CSV at run time, then draws a cohort interval chart and a log-scale funnel chart. The report does not copy the old submission's static numbers.
+The project now includes a PDF report generator. It recalculates data checks, cohort rates, confidence intervals, pairwise tests, and model comparisons from the CSV at run time. The report follows the reference submission's main sections, adds cohort and funnel charts, and labels model metrics as retrospective because feature timing is not established.
 

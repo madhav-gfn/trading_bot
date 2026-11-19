@@ -7,69 +7,75 @@ endobj
 << /Title (Vahan Lead-Source Cohort Performance) /Author (Vahan lead funnel analysis) >>
 endobj
 3 0 obj
-<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R] /Count 4 >>
+<< /Type /Pages /Kids [8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R] /Count 8 >>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
 endobj
 5 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
 endobj
 6 0 obj
-<< /Length 3831 >>
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 4226 >>
 stream
 BT /F2 22.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 784.0 Tm (Lead-source cohort performance) Tj ET
 BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 765.0 Tm (Vahan sourcing and telecalling funnel | First Trip conversion analysis) Tj ET
 0.210 0.420 0.600 RG 1.5 w 54.0 746.0 m 541.0 746.0 l S
 BT /F2 14.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 714.0 Tm (Executive summary) Tj ET
-BT /F1 10.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 692.0 Tm (This report compares lead sources by the share of uploaded leads that reached First Trip \(FT\).) Tj ET
-BT /F1 10.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 677.0 Tm (Warm and cold sources are ranked separately because they enter the funnel at different stages.) Tj ET
-BT /F1 10.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 662.0 Tm (Wilson confidence intervals and Fisher exact tests keep the small event counts in view.) Tj ET
-0.950 0.960 0.970 rg 54.0 586.0 487.0 61.0 re f
-0.840 0.870 0.890 RG 0.7 w 54.0 586.0 487.0 61.0 re S
-0.210 0.420 0.600 rg 54.0 586.0 4.0 61.0 re f
-BT /F2 10.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 68.0 624.5 Tm (The two leading cold cohorts are statistically tied in this sample. Treat Single) Tj ET
-BT /F2 10.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 68.0 609.5 Tm (Referral > 7 days and Khanna - 2W 26th Jul as co-leaders, not a firm first and) Tj ET
-BT /F2 10.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 68.0 594.5 Tm (second.) Tj ET
-BT /F2 13.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 556.0 Tm (Data integrity) Tj ET
-0.090 0.130 0.170 rg 54.0 517.0 487.0 29.0 re f
-BT /F2 8.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 60.0 530.5 Tm (Check) Tj ET
-BT /F2 8.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 235.0 530.5 Tm (Result) Tj ET
-1.000 1.000 1.000 rg 54.0 488.0 487.0 29.0 re f
-0.840 0.870 0.890 RG 0.7 w 54.0 488.0 m 541.0 488.0 l S
-BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 502.5 Tm (Source rows) Tj ET
-BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 502.5 Tm (18,198) Tj ET
-0.950 0.960 0.970 rg 54.0 459.0 487.0 29.0 re f
-0.840 0.870 0.890 RG 0.7 w 54.0 459.0 m 541.0 459.0 l S
-BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 473.5 Tm (Rows after lead-level deduplication) Tj ET
-BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 473.5 Tm (17,098) Tj ET
-1.000 1.000 1.000 rg 54.0 430.0 487.0 29.0 re f
-0.840 0.870 0.890 RG 0.7 w 54.0 430.0 m 541.0 430.0 l S
-BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 444.5 Tm (Repeated phone hashes) Tj ET
-BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 444.5 Tm (1,077 hashes across 2,177 rows) Tj ET
-0.950 0.960 0.970 rg 54.0 401.0 487.0 29.0 re f
-0.840 0.870 0.890 RG 0.7 w 54.0 401.0 m 541.0 401.0 l S
-BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 415.5 Tm (Missing phone hashes) Tj ET
-BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 415.5 Tm (1; kept separately) Tj ET
-1.000 1.000 1.000 rg 54.0 372.0 487.0 29.0 re f
-0.840 0.870 0.890 RG 0.7 w 54.0 372.0 m 541.0 372.0 l S
-BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 386.5 Tm (FT events) Tj ET
-BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 386.5 Tm (54 raw; 53 after deduplication) Tj ET
-0.950 0.960 0.970 rg 54.0 343.0 487.0 29.0 re f
-0.840 0.870 0.890 RG 0.7 w 54.0 343.0 m 541.0 343.0 l S
-BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 357.5 Tm (FT with no logged connection) Tj ET
-BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 357.5 Tm (22 raw records flagged) Tj ET
-BT /F1 8.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 324.5 Tm (Known phone hashes keep their most advanced recorded funnel state. Missing hashes cannot identify a person, so) Tj ET
-BT /F1 8.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 312.5 Tm (each row is retained. Inconsistent FT rows remain in cohort rates and are flagged.) Tj ET
+BT /F1 10.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 692.0 Tm (This report answers three questions: which lead-source cohorts have the strongest observed FT) Tj ET
+BT /F1 10.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 677.0 Tm (rate, how the SQL aggregation reproduces that ranking, and what an exploratory model associates) Tj ET
+BT /F1 10.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 662.0 Tm (with FT. Warm and cold sources are ranked separately. Confidence intervals, tests and event) Tj ET
+BT /F1 10.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 647.0 Tm (counts keep the small sample in view.) Tj ET
+0.950 0.960 0.970 rg 54.0 571.0 487.0 61.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 571.0 487.0 61.0 re S
+0.210 0.420 0.600 rg 54.0 571.0 4.0 61.0 re f
+BT /F2 10.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 68.0 609.5 Tm (The two leading cold cohorts are statistically tied in this sample. Treat Single) Tj ET
+BT /F2 10.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 68.0 594.5 Tm (Referral > 7 days and Khanna - 2W 26th Jul as co-leaders, not a firm first and) Tj ET
+BT /F2 10.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 68.0 579.5 Tm (second.) Tj ET
+BT /F2 13.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 541.0 Tm (Data integrity) Tj ET
+0.090 0.130 0.170 rg 54.0 502.0 487.0 29.0 re f
+BT /F2 8.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 60.0 515.5 Tm (Check) Tj ET
+BT /F2 8.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 235.0 515.5 Tm (Result) Tj ET
+1.000 1.000 1.000 rg 54.0 473.0 487.0 29.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 473.0 m 541.0 473.0 l S
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 487.5 Tm (Source rows) Tj ET
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 487.5 Tm (18,198) Tj ET
+0.950 0.960 0.970 rg 54.0 444.0 487.0 29.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 444.0 m 541.0 444.0 l S
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 458.5 Tm (Rows after lead-level deduplication) Tj ET
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 458.5 Tm (17,098) Tj ET
+1.000 1.000 1.000 rg 54.0 415.0 487.0 29.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 415.0 m 541.0 415.0 l S
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 429.5 Tm (Repeated phone hashes) Tj ET
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 429.5 Tm (1,077 hashes across 2,177 rows) Tj ET
+0.950 0.960 0.970 rg 54.0 386.0 487.0 29.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 386.0 m 541.0 386.0 l S
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 400.5 Tm (Missing phone hashes) Tj ET
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 400.5 Tm (1; kept separately) Tj ET
+1.000 1.000 1.000 rg 54.0 357.0 487.0 29.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 357.0 m 541.0 357.0 l S
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 371.5 Tm (FT events) Tj ET
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 371.5 Tm (54 raw; 53 after deduplication) Tj ET
+0.950 0.960 0.970 rg 54.0 328.0 487.0 29.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 328.0 m 541.0 328.0 l S
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 342.5 Tm (FT with no logged connection) Tj ET
+BT /F1 8.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 235.0 342.5 Tm (22 raw records flagged) Tj ET
+BT /F1 8.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 309.5 Tm (Known phone hashes keep their most advanced recorded funnel state. Missing hashes cannot identify a person, so) Tj ET
+BT /F1 8.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 297.5 Tm (each row is retained. Inconsistent FT rows remain in cohort rates and are flagged.) Tj ET
+BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 141.0 Tm (Model sample: 31 FT events in 17,076 records \(0.18%\). Model metrics are retrospective: several inputs may) Tj ET
+BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 128.0 Tm (only be known after upload or near the FT outcome.) Tj ET
 0.840 0.870 0.890 RG 0.7 w 54.0 36.0 m 541.0 36.0 l S
 BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 19.0 Tm (Vahan lead funnel analysis) Tj ET
 BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 523.0 19.0 Tm (1) Tj ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
-endobj
 8 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
 << /Length 8648 >>
 stream
 BT /F2 22.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 784.0 Tm (Cohort performance) Tj ET
@@ -196,10 +202,10 @@ BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 19.0 Tm (Vahan lead funnel analy
 BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 523.0 19.0 Tm (2) Tj ET
 endstream
 endobj
-9 0 obj
-<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 8 0 R >>
-endobj
 10 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
 << /Length 9887 >>
 stream
 BT /F2 22.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 784.0 Tm (Pairwise comparisons) Tj ET
@@ -348,63 +354,772 @@ BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 19.0 Tm (Vahan lead funnel analy
 BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 523.0 19.0 Tm (3) Tj ET
 endstream
 endobj
-11 0 obj
-<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 10 0 R >>
-endobj
 12 0 obj
-<< /Length 3484 >>
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Length 8657 >>
 stream
-BT /F2 22.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 784.0 Tm (Method and limitations) Tj ET
-BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 765.0 Tm (Generated directly from the CSV; no saved notebook output is used) Tj ET
+BT /F2 22.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 784.0 Tm (SQL aggregation) Tj ET
+BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 765.0 Tm (The same cohort question expressed as a window-function query) Tj ET
 0.210 0.420 0.600 RG 1.5 w 54.0 746.0 m 541.0 746.0 l S
-BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 716.0 Tm (Cohort method) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 699.5 Tm (The generator deduplicates known phone hashes by keeping the row with the most advanced recorded) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 685.5 Tm (funnel state. Missing phone hashes remain separate records. It aggregates by lead_source, splits) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 671.5 Tm (warm sources by the PreOb and AI Connected name patterns, excludes cohorts below 100 leads, and) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 657.5 Tm (calculates Wilson intervals.) Tj ET
-BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 626.0 Tm (Statistical comparison) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 609.5 Tm (Fisher exact tests compare the FT and non-FT counts for each pair among the displayed top three in) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 595.5 Tm (each segment. Tests are unadjusted and the small positive counts limit the conclusions.) Tj ET
-BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 564.0 Tm (Model interpretation) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 547.5 Tm (The notebook's model includes call, interest and onboarding fields, but their timing relative to FT) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 533.5 Tm (is not established in the supplied extract. Random cross-validation metrics and feature rankings are) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 519.5 Tm (retrospective descriptions, not prospective estimates of who can be identified at upload. This) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 505.5 Tm (report does not repeat them as operational performance claims.) Tj ET
-BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 474.0 Tm (Next analysis step) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 457.5 Tm (Before lead scoring is considered, establish event timestamps and the exact decision point, then) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 443.5 Tm (evaluate features available at that point on a later time period held out from training.) Tj ET
-BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 412.0 Tm (Source and definitions) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 395.5 Tm (Input file: Vahan_Case_Study.csv. First Trip is represented by FT_after_upload. Minimum cohort size:) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 381.5 Tm (100. Confidence intervals: 95% Wilson score intervals. Pairwise tests: two-sided Fisher exact tests.) Tj ET
-BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 350.0 Tm (Data quality follow-up) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 333.5 Tm (Investigate repeated source attribution and FT records without a logged connection in the upstream) Tj ET
-BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 319.5 Tm (pipeline. Keep these checks in future refreshes so changes in the export are visible.) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 719.0 Tm (The query treats the raw CSV as a leads table, keeps each known phone hash's most advanced funnel state,) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 706.0 Tm (preserves rows with missing identifiers, assigns warm or cold status, and ranks sources within each) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 693.0 Tm (segment.) Tj ET
+0.950 0.960 0.970 rg 54.0 416.0 487.0 262.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 416.0 487.0 262.0 re S
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 662.2 Tm (WITH ranked AS \() Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 649.2 Tm (SELECT *, ROW_NUMBER\(\) OVER \() Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 636.2 Tm (PARTITION BY COALESCE\(candidate_phone, 'missing_' || rowid\)) Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 623.2 Tm (ORDER BY FT_after_upload DESC, Interested DESC,) Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 610.2 Tm (Connected DESC, Attempted DESC\) AS rn) Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 597.2 Tm (FROM leads) Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 584.2 Tm (\), one_lead AS \(SELECT * FROM ranked WHERE rn = 1\),) Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 571.2 Tm (cohort AS \() Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 558.2 Tm (SELECT lead_source, SUM\("Uploaded Leads"\) AS leads,) Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 545.2 Tm (CASE WHEN lead_source LIKE '%PreOb%' OR) Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 532.2 Tm (lead_source LIKE '%AI Connected%' THEN 'warm') Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 519.2 Tm (ELSE 'cold' END AS segment,) Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 506.2 Tm (SUM\(FT_after_upload\) AS ft,) Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 493.2 Tm (100.0 * SUM\(FT_after_upload\) / SUM\("Uploaded Leads"\) AS ft_rate) Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 480.2 Tm (FROM one_lead GROUP BY lead_source) Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 467.2 Tm (HAVING SUM\("Uploaded Leads"\) >= 100) Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 454.2 Tm (\)) Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 441.2 Tm (SELECT *, RANK\(\) OVER \(PARTITION BY segment) Tj ET
+BT /F3 7.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 65.0 428.2 Tm (ORDER BY ft_rate DESC\) AS rank_in_segment FROM cohort;) Tj ET
+BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 389.0 Tm (Top three results by segment) Tj ET
+0.090 0.130 0.170 rg 54.0 341.0 487.0 39.0 re f
+BT /F2 6.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 60.0 366.3 Tm (Segment) Tj ET
+BT /F2 6.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 102.0 366.3 Tm (Rank) Tj ET
+BT /F2 6.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 130.0 366.3 Tm (Lead source) Tj ET
+BT /F2 6.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 304.0 366.3 Tm (Leads) Tj ET
+BT /F2 6.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 350.0 366.3 Tm (Attempt) Tj ET
+BT /F2 6.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 393.0 366.3 Tm (Connect) Tj ET
+BT /F2 6.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 436.0 366.3 Tm (Interest) Tj ET
+BT /F2 6.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 479.0 366.3 Tm (FT) Tj ET
+BT /F2 6.7 Tf 1.000 1.000 1.000 rg 1 0 0 1 504.0 366.3 Tm (FT rate) Tj ET
+1.000 1.000 1.000 rg 54.0 302.0 487.0 39.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 302.0 m 541.0 302.0 l S
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 328.3 Tm (Cold) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 102.0 328.3 Tm (1) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 130.0 328.3 Tm (Single Referral > 7 days- 24th Jul) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 304.0 328.3 Tm (1,500) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 350.0 328.3 Tm (1454) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 393.0 328.3 Tm (690) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 436.0 328.3 Tm (7) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 479.0 328.3 Tm (14) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 504.0 328.3 Tm (0.933%) Tj ET
+0.950 0.960 0.970 rg 54.0 263.0 487.0 39.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 263.0 m 541.0 263.0 l S
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 289.3 Tm (Cold) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 102.0 289.3 Tm (2) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 130.0 289.3 Tm (Khanna- 2W 26th Jul) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 304.0 289.3 Tm (1,546) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 350.0 289.3 Tm (1376) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 393.0 289.3 Tm (574) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 436.0 289.3 Tm (20) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 479.0 289.3 Tm (14) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 504.0 289.3 Tm (0.906%) Tj ET
+1.000 1.000 1.000 rg 54.0 224.0 487.0 39.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 224.0 m 541.0 224.0 l S
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 250.3 Tm (Cold) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 102.0 250.3 Tm (3) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 130.0 250.3 Tm (OLX - Ashwin - 2W - 17 Jul) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 304.0 250.3 Tm (5,182) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 350.0 250.3 Tm (962) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 393.0 250.3 Tm (372) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 436.0 250.3 Tm (9) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 479.0 250.3 Tm (4) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 504.0 250.3 Tm (0.077%) Tj ET
+0.950 0.960 0.970 rg 54.0 185.0 487.0 39.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 185.0 m 541.0 185.0 l S
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 211.3 Tm (Warm) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 102.0 211.3 Tm (1) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 130.0 211.3 Tm (PreOb-Ob Fees Paid 29th Jul \(set 1\)) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 304.0 211.3 Tm (1,479) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 350.0 211.3 Tm (1429) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 393.0 211.3 Tm (648) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 436.0 211.3 Tm (103) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 479.0 211.3 Tm (7) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 504.0 211.3 Tm (0.473%) Tj ET
+1.000 1.000 1.000 rg 54.0 146.0 487.0 39.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 146.0 m 541.0 146.0 l S
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 172.3 Tm (Warm) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 102.0 172.3 Tm (2) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 130.0 172.3 Tm (PreOb-Ob Fees Paid 29th Jul \(set 2\)) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 304.0 172.3 Tm (1,550) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 350.0 172.3 Tm (1511) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 393.0 172.3 Tm (732) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 436.0 172.3 Tm (122) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 479.0 172.3 Tm (7) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 504.0 172.3 Tm (0.452%) Tj ET
+0.950 0.960 0.970 rg 54.0 107.0 487.0 39.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 107.0 m 541.0 107.0 l S
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 133.3 Tm (Warm) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 102.0 133.3 Tm (3) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 130.0 133.3 Tm (AI Connected but not Connected by TC- Set 1) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 304.0 133.3 Tm (1,480) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 350.0 133.3 Tm (1331) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 393.0 133.3 Tm (694) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 436.0 133.3 Tm (29) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 479.0 133.3 Tm (5) Tj ET
+BT /F1 6.7 Tf 0.090 0.130 0.170 rg 1 0 0 1 504.0 133.3 Tm (0.338%) Tj ET
+BT /F1 8.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 86.5 Tm (The table reports deduplicated funnel counts. The FT rate ranking matches the cohort section; the confidence) Tj ET
+BT /F1 8.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 74.5 Tm (intervals and anomaly flags are calculated alongside the SQL-style aggregation.) Tj ET
 0.840 0.870 0.890 RG 0.7 w 54.0 36.0 m 541.0 36.0 l S
 BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 19.0 Tm (Vahan lead funnel analysis) Tj ET
 BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 523.0 19.0 Tm (4) Tj ET
 endstream
 endobj
-13 0 obj
-<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 12 0 R >>
+14 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 13 0 R >>
+endobj
+15 0 obj
+<< /Length 4601 >>
+stream
+BT /F2 22.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 784.0 Tm (Exploratory model) Tj ET
+BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 765.0 Tm (Which recorded fields are associated with First Trip?) Tj ET
+0.210 0.420 0.600 RG 1.5 w 54.0 746.0 m 541.0 746.0 l S
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 718.5 Tm (Target: FT_after_upload. The model uses 17,076 deduplicated records after excluding 22 raw) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 704.5 Tm (FT-without-connection anomalies; the remaining target has 31 positive examples \(0.18%\). Five-fold) Tj ET
+BT /F1 9.5 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 690.5 Tm (stratified cross-validation is used because one small holdout contains very few FT events.) Tj ET
+BT /F2 12.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 665.0 Tm (Candidate model comparison) Tj ET
+0.090 0.130 0.170 rg 54.0 620.0 487.0 36.0 re f
+BT /F2 8.0 Tf 1.000 1.000 1.000 rg 1 0 0 1 60.0 641.0 Tm (Model) Tj ET
+BT /F2 8.0 Tf 1.000 1.000 1.000 rg 1 0 0 1 270.0 641.0 Tm (ROC-AUC) Tj ET
+BT /F2 8.0 Tf 1.000 1.000 1.000 rg 1 0 0 1 345.0 641.0 Tm (PR-AUC) Tj ET
+BT /F2 8.0 Tf 1.000 1.000 1.000 rg 1 0 0 1 420.0 641.0 Tm (Top 1% FT capture) Tj ET
+1.000 1.000 1.000 rg 54.0 584.0 487.0 36.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 584.0 m 541.0 584.0 l S
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 606.0 Tm (Random Forest) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 270.0 606.0 Tm (0.969) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 345.0 606.0 Tm (0.463) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 420.0 606.0 Tm (83.9%) Tj ET
+0.950 0.960 0.970 rg 54.0 548.0 487.0 36.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 548.0 m 541.0 548.0 l S
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 570.0 Tm (Logistic Regression) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 270.0 570.0 Tm (0.965) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 345.0 570.0 Tm (0.427) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 420.0 570.0 Tm (83.9%) Tj ET
+1.000 1.000 1.000 rg 54.0 512.0 487.0 36.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 512.0 m 541.0 512.0 l S
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 534.0 Tm (Gradient Boosting) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 270.0 534.0 Tm (0.155) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 345.0 534.0 Tm (0.045) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 420.0 534.0 Tm (6.5%) Tj ET
+0.950 0.960 0.970 rg 54.0 476.0 487.0 36.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 476.0 m 541.0 476.0 l S
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 498.0 Tm (Dummy baseline) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 270.0 498.0 Tm (0.499) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 345.0 498.0 Tm (0.002) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 420.0 498.0 Tm (32.3%) Tj ET
+BT /F2 11.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 451.0 Tm (Candidate choice) Tj ET
+BT /F1 8.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 436.2 Tm (Logistic regression is included for readable coefficient directions. Random forest provides a non-linear) Tj ET
+BT /F1 8.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 423.7 Tm (comparison; gradient boosting tests another tree approach; the stratified dummy model is the no-signal) Tj ET
+BT /F1 8.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 411.2 Tm (reference.) Tj ET
+BT /F2 11.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 386.5 Tm (Fields used) Tj ET
+BT /F1 8.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 371.7 Tm (Lead source, upload weekday, Attempted, Connected, Interested, onboarding flags, tag_filled, and Attempt per) Tj ET
+BT /F1 8.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 359.2 Tm (Lead. Percentage columns and FT_after_first_attempt are excluded because they encode the target or a closely) Tj ET
+BT /F1 8.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 346.7 Tm (related outcome. The unreliable timing field is also excluded.) Tj ET
+BT /F2 11.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 322.0 Tm (Timing limitation) Tj ET
+BT /F1 8.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 307.2 Tm (The extract does not establish that call, interest, or onboarding fields are known before FT or at the time) Tj ET
+BT /F1 8.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 294.7 Tm (of lead assignment. Random cross-validation cannot fix this. Scores and capture rates below describe) Tj ET
+BT /F1 8.8 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 282.2 Tm (retrospective ranking only; they are not an operational forecast.) Tj ET
+0.840 0.870 0.890 RG 0.7 w 54.0 36.0 m 541.0 36.0 l S
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 19.0 Tm (Vahan lead funnel analysis) Tj ET
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 523.0 19.0 Tm (5) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 15 0 R >>
+endobj
+17 0 obj
+<< /Length 26345 >>
+stream
+BT /F2 22.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 784.0 Tm (Model evaluation) Tj ET
+BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 765.0 Tm (Out-of-fold predictions from five-fold stratified cross-validation) Tj ET
+0.210 0.420 0.600 RG 1.5 w 54.0 746.0 m 541.0 746.0 l S
+BT /F2 11.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 717.0 Tm (Logistic regression confusion matrix) Tj ET
+0.090 0.130 0.170 rg 54.0 682.0 487.0 27.0 re f
+BT /F2 8.0 Tf 1.000 1.000 1.000 rg 1 0 0 1 60.0 694.0 Tm (Actual / predicted) Tj ET
+BT /F2 8.0 Tf 1.000 1.000 1.000 rg 1 0 0 1 250.0 694.0 Tm (No FT) Tj ET
+BT /F2 8.0 Tf 1.000 1.000 1.000 rg 1 0 0 1 380.0 694.0 Tm (FT) Tj ET
+1.000 1.000 1.000 rg 54.0 655.0 487.0 27.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 655.0 m 541.0 655.0 l S
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 668.0 Tm (No FT) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 250.0 668.0 Tm (15,739) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 380.0 668.0 Tm (1,306) Tj ET
+0.950 0.960 0.970 rg 54.0 628.0 487.0 27.0 re f
+0.840 0.870 0.890 RG 0.7 w 54.0 628.0 m 541.0 628.0 l S
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 60.0 641.0 Tm (FT) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 250.0 641.0 Tm (5) Tj ET
+BT /F1 8.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 380.0 641.0 Tm (26) Tj ET
+BT /F1 8.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 613.5 Tm (Single 80/20 holdout: 3,416 test records with 6 FT events; FT precision 0.016, recall 0.833, F1 0.031. A few) Tj ET
+BT /F1 8.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 601.5 Tm (positives moving between folds can materially change these values.) Tj ET
+BT /F2 11.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 589.0 Tm (Threshold-independent ranking views) Tj ET
+BT /F2 10.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 578.0 Tm (ROC \(AUC 0.965\)) Tj ET
+0.840 0.870 0.890 RG 0.5 w 85.0 467.0 m 271.0 467.0 l S
+0.840 0.870 0.890 RG 0.5 w 85.0 568.0 m 85.0 467.0 l S
+BT /F1 6.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 67.0 464.0 Tm (0.0) Tj ET
+BT /F1 6.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 79.0 458.0 Tm (0.0) Tj ET
+0.840 0.870 0.890 RG 0.5 w 85.0 517.5 m 271.0 517.5 l S
+0.840 0.870 0.890 RG 0.5 w 178.0 568.0 m 178.0 467.0 l S
+BT /F1 6.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 67.0 514.5 Tm (0.5) Tj ET
+BT /F1 6.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 172.0 458.0 Tm (0.5) Tj ET
+0.840 0.870 0.890 RG 0.5 w 85.0 568.0 m 271.0 568.0 l S
+0.840 0.870 0.890 RG 0.5 w 271.0 568.0 m 271.0 467.0 l S
+BT /F1 6.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 67.0 565.0 Tm (1.0) Tj ET
+BT /F1 6.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 265.0 458.0 Tm (1.0) Tj ET
+0.210 0.420 0.600 RG 1.3 w 85.0 467.0 m 85.0 473.5 l S
+0.210 0.420 0.600 RG 1.3 w 85.0 473.5 m 85.1 483.3 l S
+0.210 0.420 0.600 RG 1.3 w 85.1 483.3 m 85.1 493.1 l S
+0.210 0.420 0.600 RG 1.3 w 85.1 493.1 m 85.1 502.8 l S
+0.210 0.420 0.600 RG 1.3 w 85.1 502.8 m 85.1 506.1 l S
+0.210 0.420 0.600 RG 1.3 w 85.1 506.1 m 85.2 515.9 l S
+0.210 0.420 0.600 RG 1.3 w 85.2 515.9 m 85.2 522.4 l S
+0.210 0.420 0.600 RG 1.3 w 85.2 522.4 m 85.3 532.2 l S
+0.210 0.420 0.600 RG 1.3 w 85.3 532.2 m 85.3 545.2 l S
+0.210 0.420 0.600 RG 1.3 w 85.3 545.2 m 85.3 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 85.3 551.7 m 86.8 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 86.8 551.7 m 87.6 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 87.6 551.7 m 88.2 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 88.2 551.7 m 89.3 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 89.3 551.7 m 90.4 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 90.4 551.7 m 93.3 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 93.3 551.7 m 94.2 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 94.2 551.7 m 95.2 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 95.2 551.7 m 97.3 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 97.3 551.7 m 98.6 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 98.6 551.7 m 99.8 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 99.8 551.7 m 100.8 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 100.8 551.7 m 102.3 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 102.3 551.7 m 103.1 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 103.1 551.7 m 103.6 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 103.6 551.7 m 103.7 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 103.7 551.7 m 103.8 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 103.8 551.7 m 104.0 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 104.0 551.7 m 104.3 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 104.3 551.7 m 104.7 551.7 l S
+0.210 0.420 0.600 RG 1.3 w 104.7 551.7 m 104.7 555.0 l S
+0.210 0.420 0.600 RG 1.3 w 104.7 555.0 m 104.9 555.0 l S
+0.210 0.420 0.600 RG 1.3 w 104.9 555.0 m 105.2 555.0 l S
+0.210 0.420 0.600 RG 1.3 w 105.2 555.0 m 105.7 555.0 l S
+0.210 0.420 0.600 RG 1.3 w 105.7 555.0 m 105.9 555.0 l S
+0.210 0.420 0.600 RG 1.3 w 105.9 555.0 m 106.0 555.0 l S
+0.210 0.420 0.600 RG 1.3 w 106.0 555.0 m 106.4 555.0 l S
+0.210 0.420 0.600 RG 1.3 w 106.4 555.0 m 107.4 555.0 l S
+0.210 0.420 0.600 RG 1.3 w 107.4 555.0 m 108.1 555.0 l S
+0.210 0.420 0.600 RG 1.3 w 108.1 555.0 m 108.6 555.0 l S
+0.210 0.420 0.600 RG 1.3 w 108.6 555.0 m 108.8 555.0 l S
+0.210 0.420 0.600 RG 1.3 w 108.8 555.0 m 110.2 555.0 l S
+0.210 0.420 0.600 RG 1.3 w 110.2 555.0 m 110.8 555.0 l S
+0.210 0.420 0.600 RG 1.3 w 110.8 555.0 m 111.2 555.0 l S
+0.210 0.420 0.600 RG 1.3 w 111.2 555.0 m 112.7 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 112.7 558.2 m 113.3 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 113.3 558.2 m 114.8 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 114.8 558.2 m 115.8 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 115.8 558.2 m 116.8 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 116.8 558.2 m 117.7 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 117.7 558.2 m 117.9 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 117.9 558.2 m 118.0 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 118.0 558.2 m 118.3 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 118.3 558.2 m 119.4 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 119.4 558.2 m 119.7 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 119.7 558.2 m 120.0 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 120.0 558.2 m 120.5 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 120.5 558.2 m 121.5 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 121.5 558.2 m 122.9 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 122.9 558.2 m 124.1 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 124.1 558.2 m 125.1 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 125.1 558.2 m 125.6 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 125.6 558.2 m 126.8 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 126.8 558.2 m 127.9 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 127.9 558.2 m 129.6 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 129.6 558.2 m 130.2 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 130.2 558.2 m 130.4 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 130.4 558.2 m 130.7 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 130.7 558.2 m 131.1 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 131.1 558.2 m 131.6 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 131.6 558.2 m 132.9 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 132.9 558.2 m 133.2 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 133.2 558.2 m 133.7 558.2 l S
+0.210 0.420 0.600 RG 1.3 w 133.7 558.2 m 135.4 564.7 l S
+0.210 0.420 0.600 RG 1.3 w 135.4 564.7 m 135.8 564.7 l S
+0.210 0.420 0.600 RG 1.3 w 135.8 564.7 m 135.9 564.7 l S
+0.210 0.420 0.600 RG 1.3 w 135.9 564.7 m 136.0 564.7 l S
+0.210 0.420 0.600 RG 1.3 w 136.0 564.7 m 136.0 564.7 l S
+0.210 0.420 0.600 RG 1.3 w 136.0 564.7 m 137.3 564.7 l S
+0.210 0.420 0.600 RG 1.3 w 137.3 564.7 m 137.5 564.7 l S
+0.210 0.420 0.600 RG 1.3 w 137.5 564.7 m 137.7 564.7 l S
+0.210 0.420 0.600 RG 1.3 w 137.7 564.7 m 137.8 564.7 l S
+0.210 0.420 0.600 RG 1.3 w 137.8 564.7 m 137.9 564.7 l S
+0.210 0.420 0.600 RG 1.3 w 137.9 564.7 m 138.4 564.7 l S
+0.210 0.420 0.600 RG 1.3 w 138.4 564.7 m 138.6 564.7 l S
+0.210 0.420 0.600 RG 1.3 w 138.6 564.7 m 138.9 564.7 l S
+0.210 0.420 0.600 RG 1.3 w 138.9 564.7 m 139.8 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 139.8 568.0 m 139.9 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 139.9 568.0 m 140.1 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 140.1 568.0 m 140.2 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 140.2 568.0 m 140.4 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 140.4 568.0 m 140.6 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 140.6 568.0 m 140.7 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 140.7 568.0 m 140.7 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 140.7 568.0 m 140.8 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 140.8 568.0 m 140.9 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 140.9 568.0 m 141.0 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 141.0 568.0 m 150.3 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 150.3 568.0 m 150.5 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 150.5 568.0 m 159.7 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 159.7 568.0 m 168.9 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 168.9 568.0 m 179.0 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 179.0 568.0 m 179.2 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 179.2 568.0 m 179.4 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 179.4 568.0 m 179.6 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 179.6 568.0 m 180.0 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 180.0 568.0 m 180.1 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 180.1 568.0 m 180.3 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 180.3 568.0 m 180.8 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 180.8 568.0 m 181.3 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 181.3 568.0 m 182.9 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 182.9 568.0 m 183.0 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 183.0 568.0 m 183.1 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 183.1 568.0 m 183.5 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 183.5 568.0 m 184.7 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 184.7 568.0 m 187.2 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 187.2 568.0 m 187.5 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 187.5 568.0 m 187.6 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 187.6 568.0 m 188.7 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 188.7 568.0 m 190.9 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 190.9 568.0 m 191.4 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 191.4 568.0 m 193.9 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 193.9 568.0 m 195.1 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 195.1 568.0 m 195.7 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 195.7 568.0 m 196.4 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 196.4 568.0 m 197.8 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 197.8 568.0 m 197.9 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 197.9 568.0 m 198.9 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 198.9 568.0 m 199.4 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 199.4 568.0 m 200.7 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 200.7 568.0 m 201.1 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 201.1 568.0 m 201.5 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 201.5 568.0 m 202.7 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 202.7 568.0 m 205.3 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 205.3 568.0 m 207.1 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 207.1 568.0 m 207.8 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 207.8 568.0 m 210.6 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 210.6 568.0 m 210.8 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 210.8 568.0 m 211.1 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 211.1 568.0 m 211.5 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 211.5 568.0 m 213.1 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 213.1 568.0 m 214.1 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 214.1 568.0 m 215.0 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 215.0 568.0 m 215.8 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 215.8 568.0 m 216.5 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 216.5 568.0 m 218.2 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 218.2 568.0 m 218.9 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 218.9 568.0 m 219.3 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 219.3 568.0 m 219.9 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 219.9 568.0 m 221.4 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 221.4 568.0 m 222.2 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 222.2 568.0 m 224.8 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 224.8 568.0 m 233.7 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 233.7 568.0 m 235.9 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 235.9 568.0 m 237.7 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 237.7 568.0 m 238.0 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 238.0 568.0 m 238.7 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 238.7 568.0 m 240.3 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 240.3 568.0 m 243.7 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 243.7 568.0 m 244.6 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 244.6 568.0 m 245.8 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 245.8 568.0 m 247.5 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 247.5 568.0 m 249.3 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 249.3 568.0 m 252.3 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 252.3 568.0 m 253.4 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 253.4 568.0 m 254.3 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 254.3 568.0 m 255.4 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 255.4 568.0 m 258.2 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 258.2 568.0 m 259.1 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 259.1 568.0 m 259.3 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 259.3 568.0 m 259.9 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 259.9 568.0 m 261.1 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 261.1 568.0 m 263.8 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 263.8 568.0 m 265.9 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 265.9 568.0 m 268.1 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 268.1 568.0 m 269.4 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 269.4 568.0 m 269.8 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 269.8 568.0 m 270.9 568.0 l S
+0.210 0.420 0.600 RG 1.3 w 270.9 568.0 m 271.0 568.0 l S
+BT /F1 6.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 101.0 447.5 Tm (False positive rate) Tj ET
+BT /F1 6.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 55.0 558.5 Tm (True positive rate) Tj ET
+BT /F2 10.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 304.0 578.0 Tm (Precision-recall \(AP 0.427\)) Tj ET
+0.840 0.870 0.890 RG 0.5 w 335.0 467.0 m 521.0 467.0 l S
+0.840 0.870 0.890 RG 0.5 w 335.0 568.0 m 335.0 467.0 l S
+BT /F1 6.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 317.0 464.0 Tm (0.0) Tj ET
+BT /F1 6.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 329.0 458.0 Tm (0.0) Tj ET
+0.840 0.870 0.890 RG 0.5 w 335.0 517.5 m 521.0 517.5 l S
+0.840 0.870 0.890 RG 0.5 w 428.0 568.0 m 428.0 467.0 l S
+BT /F1 6.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 317.0 514.5 Tm (0.5) Tj ET
+BT /F1 6.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 422.0 458.0 Tm (0.5) Tj ET
+0.840 0.870 0.890 RG 0.5 w 335.0 568.0 m 521.0 568.0 l S
+0.840 0.870 0.890 RG 0.5 w 521.0 568.0 m 521.0 467.0 l S
+BT /F1 6.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 317.0 565.0 Tm (1.0) Tj ET
+BT /F1 6.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 515.0 458.0 Tm (1.0) Tj ET
+0.760 0.400 0.120 RG 0.8 w 335.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.2 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.2 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.3 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.3 m 521.0 467.4 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.4 m 521.0 467.4 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.4 m 521.0 467.4 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.4 m 521.0 467.4 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.4 m 521.0 467.4 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.4 m 521.0 467.4 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.4 m 521.0 467.4 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.4 m 521.0 467.4 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.4 m 521.0 467.4 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.4 m 521.0 467.4 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.4 m 521.0 467.4 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.4 m 521.0 467.4 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.4 m 521.0 467.5 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.5 m 521.0 467.5 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.5 m 521.0 467.5 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.5 m 521.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.6 m 521.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.6 m 521.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.6 m 521.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.6 m 521.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.6 m 521.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.6 m 521.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.6 m 521.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.6 m 521.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.6 m 521.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.6 m 521.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.6 m 521.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 521.0 467.6 m 515.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 515.0 467.6 m 515.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 515.0 467.6 m 515.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 515.0 467.6 m 515.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 515.0 467.6 m 515.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 515.0 467.6 m 515.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 515.0 467.6 m 515.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 515.0 467.6 m 515.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 515.0 467.6 m 515.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 515.0 467.6 m 515.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 515.0 467.6 m 515.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 515.0 467.6 m 515.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 515.0 467.6 m 515.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 515.0 467.6 m 509.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 509.0 467.6 m 503.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.6 m 503.0 467.6 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.6 m 503.0 467.7 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.7 m 503.0 467.7 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.7 m 503.0 467.7 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.7 m 503.0 467.7 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.7 m 503.0 467.7 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.7 m 503.0 467.7 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.7 m 503.0 467.7 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.7 m 503.0 467.7 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.7 m 503.0 467.8 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.8 m 503.0 467.8 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.8 m 503.0 467.8 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.8 m 503.0 467.8 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.8 m 503.0 467.8 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.8 m 503.0 467.9 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.9 m 503.0 467.9 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.9 m 503.0 467.9 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.9 m 503.0 467.9 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.9 m 503.0 467.9 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.9 m 503.0 467.9 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.9 m 503.0 467.9 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.9 m 503.0 467.9 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 467.9 m 503.0 468.0 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 468.0 m 503.0 468.0 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 468.0 m 503.0 468.1 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 468.1 m 503.0 468.1 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 468.1 m 503.0 468.1 l S
+0.210 0.420 0.600 RG 1.3 w 503.0 468.1 m 497.0 468.1 l S
+0.210 0.420 0.600 RG 1.3 w 497.0 468.1 m 497.0 468.2 l S
+0.210 0.420 0.600 RG 1.3 w 497.0 468.2 m 497.0 468.2 l S
+0.210 0.420 0.600 RG 1.3 w 497.0 468.2 m 497.0 468.2 l S
+0.210 0.420 0.600 RG 1.3 w 497.0 468.2 m 497.0 468.3 l S
+0.210 0.420 0.600 RG 1.3 w 497.0 468.3 m 497.0 468.3 l S
+0.210 0.420 0.600 RG 1.3 w 497.0 468.3 m 497.0 468.4 l S
+0.210 0.420 0.600 RG 1.3 w 497.0 468.4 m 497.0 468.4 l S
+0.210 0.420 0.600 RG 1.3 w 497.0 468.4 m 497.0 468.4 l S
+0.210 0.420 0.600 RG 1.3 w 497.0 468.4 m 497.0 468.4 l S
+0.210 0.420 0.600 RG 1.3 w 497.0 468.4 m 497.0 468.5 l S
+0.210 0.420 0.600 RG 1.3 w 497.0 468.5 m 497.0 468.5 l S
+0.210 0.420 0.600 RG 1.3 w 497.0 468.5 m 491.0 468.4 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 468.4 m 491.0 468.5 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 468.5 m 491.0 468.5 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 468.5 m 491.0 468.5 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 468.5 m 491.0 468.5 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 468.5 m 491.0 468.5 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 468.5 m 491.0 468.5 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 468.5 m 491.0 468.5 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 468.5 m 491.0 468.6 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 468.6 m 491.0 468.6 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 468.6 m 491.0 468.8 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 468.8 m 491.0 469.0 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 469.0 m 491.0 469.3 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 469.3 m 491.0 469.7 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 469.7 m 491.0 469.8 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 469.8 m 491.0 470.4 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 470.4 m 491.0 472.0 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 472.0 m 491.0 473.4 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 473.4 m 491.0 475.4 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 475.4 m 491.0 477.3 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 477.3 m 491.0 502.0 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 502.0 m 491.0 515.6 l S
+0.210 0.420 0.600 RG 1.3 w 491.0 515.6 m 473.0 513.5 l S
+0.210 0.420 0.600 RG 1.3 w 473.0 513.5 m 455.0 512.9 l S
+0.210 0.420 0.600 RG 1.3 w 455.0 512.9 m 443.0 513.6 l S
+0.210 0.420 0.600 RG 1.3 w 443.0 513.6 m 431.0 513.2 l S
+0.210 0.420 0.600 RG 1.3 w 431.0 513.2 m 419.0 515.8 l S
+0.210 0.420 0.600 RG 1.3 w 419.0 515.8 m 407.0 519.7 l S
+0.210 0.420 0.600 RG 1.3 w 407.0 519.7 m 401.0 525.5 l S
+0.210 0.420 0.600 RG 1.3 w 401.0 525.5 m 365.0 505.8 l S
+0.210 0.420 0.600 RG 1.3 w 365.0 505.8 m 347.0 500.7 l S
+0.210 0.420 0.600 RG 1.3 w 347.0 500.7 m 335.0 568.0 l S
+BT /F1 6.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 351.0 447.5 Tm (Recall) Tj ET
+BT /F1 6.5 Tf 0.350 0.410 0.460 rg 1 0 0 1 305.0 558.5 Tm (Precision) Tj ET
+BT /F2 11.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 403.0 Tm (Cumulative capture when leads are ranked by model score) Tj ET
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 391.0 Tm (Retrospective out-of-fold estimate; not an intake-time forecast.) Tj ET
+0.840 0.870 0.890 RG 0.5 w 96.0 302.0 m 533.0 302.0 l S
+0.840 0.870 0.890 RG 0.5 w 96.0 385.0 m 96.0 302.0 l S
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 89.0 292.0 Tm (0%) Tj ET
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 66.0 298.0 Tm (0%) Tj ET
+0.840 0.870 0.890 RG 0.5 w 96.0 343.5 m 533.0 343.5 l S
+0.840 0.870 0.890 RG 0.5 w 314.5 385.0 m 314.5 302.0 l S
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 307.5 292.0 Tm (50%) Tj ET
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 66.0 339.5 Tm (50%) Tj ET
+0.840 0.870 0.890 RG 0.5 w 96.0 385.0 m 533.0 385.0 l S
+0.840 0.870 0.890 RG 0.5 w 533.0 385.0 m 533.0 302.0 l S
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 526.0 292.0 Tm (100%) Tj ET
+BT /F1 7.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 66.0 381.0 Tm (100%) Tj ET
+0.760 0.400 0.120 RG 0.8 w 96.0 302.0 m 533.0 385.0 l S
+0.210 0.420 0.600 RG 1.8 w 100.4 371.6 m 104.7 371.6 l S
+0.210 0.420 0.600 RG 1.8 w 104.7 371.6 m 117.8 371.6 l S
+0.210 0.420 0.600 RG 1.8 w 117.8 371.6 m 139.7 371.6 l S
+0.210 0.420 0.600 RG 1.8 w 139.7 371.6 m 183.4 377.0 l S
+0.210 0.420 0.600 RG 1.8 w 183.4 377.0 m 314.5 385.0 l S
+0.210 0.420 0.600 RG 1.8 w 314.5 385.0 m 533.0 385.0 l S
+0.210 0.420 0.600 rg 98.2 369.4 4.4 4.4 re f
+0.210 0.420 0.600 rg 102.5 369.4 4.4 4.4 re f
+0.210 0.420 0.600 rg 115.6 369.4 4.4 4.4 re f
+0.210 0.420 0.600 rg 137.5 369.4 4.4 4.4 re f
+0.210 0.420 0.600 rg 181.2 374.8 4.4 4.4 re f
+0.210 0.420 0.600 rg 312.3 382.8 4.4 4.4 re f
+0.210 0.420 0.600 rg 530.8 382.8 4.4 4.4 re f
+BT /F1 8.8 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 260.2 Tm (In this retrospective cross-validation, the highest-scored 1% contains 26 of 31 FT events \(83.9%\). This is) Tj ET
+BT /F1 8.8 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 248.2 Tm (not evidence of equivalent capture in live calling.) Tj ET
+0.840 0.870 0.890 RG 0.7 w 54.0 36.0 m 541.0 36.0 l S
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 19.0 Tm (Vahan lead funnel analysis) Tj ET
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 523.0 19.0 Tm (6) Tj ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 17 0 R >>
+endobj
+19 0 obj
+<< /Length 4813 >>
+stream
+BT /F2 22.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 784.0 Tm (Factors associated with FT) Tj ET
+BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 765.0 Tm (Logistic regression coefficients and random forest importances) Tj ET
+0.210 0.420 0.600 RG 1.5 w 54.0 746.0 m 541.0 746.0 l S
+BT /F2 10.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 714.0 Tm (Logistic regression) Tj ET
+BT /F1 7.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 693.0 Tm (tag_filled) Tj ET
+0.210 0.420 0.600 rg 166.0 691.0 92.0 7.0 re f
+BT /F1 6.7 Tf 0.350 0.410 0.460 rg 1 0 0 1 263.0 693.3 Tm (+2.69) Tj ET
+BT /F1 7.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 674.0 Tm (lead_source_AI C...) Tj ET
+0.730 0.270 0.260 rg 166.0 672.0 88.0 7.0 re f
+BT /F1 6.7 Tf 0.350 0.410 0.460 rg 1 0 0 1 263.0 674.3 Tm (-2.58) Tj ET
+BT /F1 7.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 655.0 Tm (Connected) Tj ET
+0.210 0.420 0.600 rg 166.0 653.0 87.9 7.0 re f
+BT /F1 6.7 Tf 0.350 0.410 0.460 rg 1 0 0 1 263.0 655.3 Tm (+2.57) Tj ET
+BT /F1 7.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 636.0 Tm (lead_source_OLX ...) Tj ET
+0.210 0.420 0.600 rg 166.0 634.0 87.8 7.0 re f
+BT /F1 6.7 Tf 0.350 0.410 0.460 rg 1 0 0 1 263.0 636.3 Tm (+2.57) Tj ET
+BT /F1 7.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 617.0 Tm (lead_source_AI C...) Tj ET
+0.210 0.420 0.600 rg 166.0 615.0 83.3 7.0 re f
+BT /F1 6.7 Tf 0.350 0.410 0.460 rg 1 0 0 1 263.0 617.3 Tm (+2.44) Tj ET
+BT /F1 7.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 598.0 Tm (lead_source_Sing...) Tj ET
+0.210 0.420 0.600 rg 166.0 596.0 76.2 7.0 re f
+BT /F1 6.7 Tf 0.350 0.410 0.460 rg 1 0 0 1 263.0 598.3 Tm (+2.23) Tj ET
+BT /F1 7.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 579.0 Tm (lead_source_2W3W...) Tj ET
+0.730 0.270 0.260 rg 166.0 577.0 56.4 7.0 re f
+BT /F1 6.7 Tf 0.350 0.410 0.460 rg 1 0 0 1 263.0 579.3 Tm (-1.65) Tj ET
+BT /F2 10.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 304.0 714.0 Tm (Random forest) Tj ET
+BT /F1 7.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 304.0 693.0 Tm (OB_after_upload) Tj ET
+0.210 0.510 0.390 rg 416.0 691.0 92.0 7.0 re f
+BT /F1 6.7 Tf 0.350 0.410 0.460 rg 1 0 0 1 513.0 693.3 Tm (0.42) Tj ET
+BT /F1 7.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 304.0 674.0 Tm (tag_filled) Tj ET
+0.210 0.510 0.390 rg 416.0 672.0 39.1 7.0 re f
+BT /F1 6.7 Tf 0.350 0.410 0.460 rg 1 0 0 1 513.0 674.3 Tm (0.18) Tj ET
+BT /F1 7.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 304.0 655.0 Tm (Connected) Tj ET
+0.210 0.510 0.390 rg 416.0 653.0 35.9 7.0 re f
+BT /F1 6.7 Tf 0.350 0.410 0.460 rg 1 0 0 1 513.0 655.3 Tm (0.17) Tj ET
+BT /F1 7.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 304.0 636.0 Tm (lead_source) Tj ET
+0.210 0.510 0.390 rg 416.0 634.0 19.2 7.0 re f
+BT /F1 6.7 Tf 0.350 0.410 0.460 rg 1 0 0 1 513.0 636.3 Tm (0.09) Tj ET
+BT /F1 7.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 304.0 617.0 Tm (upload_dow) Tj ET
+0.210 0.510 0.390 rg 416.0 615.0 10.5 7.0 re f
+BT /F1 6.7 Tf 0.350 0.410 0.460 rg 1 0 0 1 513.0 617.3 Tm (0.05) Tj ET
+BT /F1 7.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 304.0 598.0 Tm (attempt_per_lead...) Tj ET
+0.210 0.510 0.390 rg 416.0 596.0 8.4 7.0 re f
+BT /F1 6.7 Tf 0.350 0.410 0.460 rg 1 0 0 1 513.0 598.3 Tm (0.04) Tj ET
+BT /F1 7.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 304.0 579.0 Tm (Attempted) Tj ET
+0.210 0.510 0.390 rg 416.0 577.0 7.6 7.0 re f
+BT /F1 6.7 Tf 0.350 0.410 0.460 rg 1 0 0 1 513.0 579.3 Tm (0.03) Tj ET
+BT /F2 11.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 543.0 Tm (How to interpret these rankings) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 525.0 Tm (A positive logistic coefficient means a higher fitted association with FT within this model; a negative) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 512.0 Tm (coefficient means the reverse. Random forest importance indicates how much a field contributes to tree) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 499.0 Tm (splits, not its direction. Correlated and nested funnel fields can trade off coefficient weight. Neither) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 486.0 Tm (model establishes a causal effect, and their shared use of downstream fields can inflate apparent signal.) Tj ET
+BT /F2 11.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 437.0 Tm (Feature timing remains unresolved) Tj ET
+BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 419.0 Tm (OB_after_upload is an outcome-stage field, while Connected, Interested and tag_filled may be logged after) Tj ET
+BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 406.0 Tm (a call. Their association is useful for describing this dataset, not for deciding which newly uploaded) Tj ET
+BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 393.0 Tm (lead to call first. A prospective model needs timestamped features and a time-based holdout.) Tj ET
+0.840 0.870 0.890 RG 0.7 w 54.0 36.0 m 541.0 36.0 l S
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 19.0 Tm (Vahan lead funnel analysis) Tj ET
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 523.0 19.0 Tm (7) Tj ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 19 0 R >>
+endobj
+21 0 obj
+<< /Length 3508 >>
+stream
+BT /F2 22.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 54.0 784.0 Tm (Recommendations) Tj ET
+BT /F1 9.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 765.0 Tm (Actions supported by the current evidence) Tj ET
+0.210 0.420 0.600 RG 1.5 w 54.0 746.0 m 541.0 746.0 l S
+0.210 0.420 0.600 rg 54.0 704.0 22.0 22.0 re f
+BT /F2 9.0 Tf 1.000 1.000 1.000 rg 1 0 0 1 61.0 712.0 Tm (1) Tj ET
+BT /F2 11.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 88.0 717.0 Tm (Fix source attribution and event logging) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 88.0 702.0 Tm (Investigate repeated phone hashes and FT records with no logged connection upstream. Keep missing) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 88.0 689.0 Tm (phone hashes distinct unless an alternative stable identifier is available.) Tj ET
+0.210 0.420 0.600 rg 54.0 647.0 22.0 22.0 re f
+BT /F2 9.0 Tf 1.000 1.000 1.000 rg 1 0 0 1 61.0 655.0 Tm (2) Tj ET
+BT /F2 11.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 88.0 660.0 Tm (Treat the two leading cold sources as co-leaders) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 88.0 645.0 Tm (Single Referral > 7 days and Khanna - 2W 26th Jul have similar FT rates and Fisher exact p = 1.0.) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 88.0 632.0 Tm (A larger sample is needed before a budget decision depends on their ordering.) Tj ET
+0.210 0.420 0.600 rg 54.0 590.0 22.0 22.0 re f
+BT /F2 9.0 Tf 1.000 1.000 1.000 rg 1 0 0 1 61.0 598.0 Tm (3) Tj ET
+BT /F2 11.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 88.0 603.0 Tm (Review OLX attempt coverage before scaling) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 88.0 588.0 Tm (OLX has four FT events and three flagged connection anomalies. Its attempt rate is 18.6%. Review) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 88.0 575.0 Tm (the early-funnel handoff before drawing a channel-quality conclusion.) Tj ET
+0.210 0.420 0.600 rg 54.0 533.0 22.0 22.0 re f
+BT /F2 9.0 Tf 1.000 1.000 1.000 rg 1 0 0 1 61.0 541.0 Tm (4) Tj ET
+BT /F2 11.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 88.0 546.0 Tm (Use the model section as retrospective analysis) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 88.0 531.0 Tm (The model surfaces associations such as onboarding, connection and tag completion, but timing and) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 88.0 518.0 Tm (causality are unverified. Do not filter leads or promise conversion capture from these scores.) Tj ET
+0.210 0.420 0.600 rg 54.0 476.0 22.0 22.0 re f
+BT /F2 9.0 Tf 1.000 1.000 1.000 rg 1 0 0 1 61.0 484.0 Tm (5) Tj ET
+BT /F2 11.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 88.0 489.0 Tm (Re-evaluate with timestamped data) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 88.0 474.0 Tm (Define the decision point, retain only features known then, and hold out a later date range.) Tj ET
+BT /F1 9.0 Tf 0.090 0.130 0.170 rg 1 0 0 1 88.0 461.0 Tm (Accumulate more FT outcomes before interpreting model differences as stable.) Tj ET
+0.840 0.870 0.890 RG 0.7 w 54.0 442.0 m 541.0 442.0 l S
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 423.0 Tm (Source: Vahan_Case_Study.csv. FT means First Trip \(`FT_after_upload`\). Cohorts under 100 leads are excluded. Wilson) Tj ET
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 412.0 Tm (intervals are 95%; pairwise p-values are two-sided Fisher exact tests. Findings describe this extract.) Tj ET
+0.840 0.870 0.890 RG 0.7 w 54.0 36.0 m 541.0 36.0 l S
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 54.0 19.0 Tm (Vahan lead funnel analysis) Tj ET
+BT /F1 8.0 Tf 0.350 0.410 0.460 rg 1 0 0 1 523.0 19.0 Tm (8) Tj ET
+endstream
+endobj
+22 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 21 0 R >>
 endobj
 xref
-0 14
+0 23
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
 0000000168 00000 n 
-0000000245 00000 n 
-0000000315 00000 n 
-0000000390 00000 n 
-0000004273 00000 n 
-0000004409 00000 n 
-0000013109 00000 n 
-0000013245 00000 n 
-0000023185 00000 n 
-0000023323 00000 n 
-0000026860 00000 n 
+0000000274 00000 n 
+0000000371 00000 n 
+0000000473 00000 n 
+0000000568 00000 n 
+0000004846 00000 n 
+0000004992 00000 n 
+0000013692 00000 n 
+0000013839 00000 n 
+0000023779 00000 n 
+0000023927 00000 n 
+0000032637 00000 n 
+0000032785 00000 n 
+0000037439 00000 n 
+0000037587 00000 n 
+0000063986 00000 n 
+0000064134 00000 n 
+0000069000 00000 n 
+0000069148 00000 n 
+0000072709 00000 n 
 trailer
-<< /Size 14 /Root 1 0 R /Info 2 0 R >>
+<< /Size 23 /Root 1 0 R /Info 2 0 R >>
 startxref
-26998
+72857
 %%EOF
